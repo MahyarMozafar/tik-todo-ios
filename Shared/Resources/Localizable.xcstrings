@@ -1315,16 +1315,6 @@
         }
       }
     },
-    "Source Code" : {
-      "localizations" : {
-        "fa" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "کد منبع"
-          }
-        }
-      }
-    },
     "Subtask" : {
       "localizations" : {
         "fa" : {

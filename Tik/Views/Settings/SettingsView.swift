@@ -235,9 +235,6 @@ struct SettingsView: View {
             } label: {
                 SettingsLabel("Version", symbol: "info", color: .gray)
             }
-            Link(destination: URL(string: "https://github.com/MahyarMozafar/tik-todo-ios")!) {
-                SettingsLabel("Source Code", symbol: "chevron.left.forwardslash.chevron.right", color: .black)
-            }
         } footer: {
             Text("Made by Mahyar Mozafar.")
         }

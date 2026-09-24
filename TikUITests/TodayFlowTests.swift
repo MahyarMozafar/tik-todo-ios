@@ -56,3 +56,21 @@ enum Screenshot {
         try? data.write(to: URL(fileURLWithPath: folder).appendingPathComponent("\(name).png"))
     }
 }
+
+final class CelebrationTests: XCTestCase {
+    func testTickingTheLastTaskOfTheDayShowsConfetti() {
+        let app = XCUIApplication.demo()
+        app.launch()
+
+        let open = ["Pay the internet bill", "Reply to Sara's email", "Call mom", "Buy groceries", "Read 20 pages"]
+        for title in open {
+            let check = app.buttons["check-\(title)"]
+            XCTAssertTrue(check.waitForExistence(timeout: 3))
+            check.tap()
+            sleep(1)
+        }
+
+        XCTAssertTrue(app.staticTexts["All done for today!"].waitForExistence(timeout: 3))
+        Screenshot.save("all-done")
+    }
+}

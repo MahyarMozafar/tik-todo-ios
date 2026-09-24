@@ -84,6 +84,7 @@ private struct TaskActionsModifier: ViewModifier {
     }
 
     private func toggle() {
+        Feedback.tick(done: !task.isDone)
         withAnimation(.snappy) { _ = model.toggle(task) }
     }
 

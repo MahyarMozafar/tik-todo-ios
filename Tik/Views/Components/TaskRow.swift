@@ -142,6 +142,7 @@ struct TaskRow: View {
 
     private func tapCheck() {
         let target = !isDone
+        Feedback.tick(done: target)
         withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
             pendingDone = target
         }

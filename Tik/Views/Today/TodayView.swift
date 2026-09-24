@@ -48,6 +48,9 @@ struct TodayView: View {
         .scrollContentBackground(.hidden)
         .scrollDismissesKeyboard(.interactively)
         .background { AppBackground() }
+        .overlay {
+            ConfettiView(trigger: model.celebrations)
+        }
         .safeAreaBar(edge: .top) {
             TodayHeader(date: now) {
                 showSettings = true

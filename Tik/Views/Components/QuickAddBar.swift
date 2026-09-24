@@ -114,6 +114,7 @@ struct QuickAddBar: View {
             return
         }
         onAdd(trimmed)
+        Feedback.added()
         text = ""
         // Pressing return hides the keyboard; bring it back for the next task.
         Task { @MainActor in

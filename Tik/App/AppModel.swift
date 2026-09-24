@@ -32,6 +32,9 @@ final class AppModel {
     /// + button) asks to add a task.
     var quickAddRequests = 0
 
+    /// Goes up by one each time the last open task of today is ticked.
+    private(set) var celebrations = 0
+
     @ObservationIgnored private var lastExternalChange: Double
 
     init() {
@@ -124,6 +127,9 @@ final class AppModel {
         if !result.removedIDs.isEmpty {
             Reminders.remove(ids: result.removedIDs)
         }
+        if result.isDone {
+            celebrateIfTodayIsDone(after: task)
+        }
         return result.isDone
     }
 
@@ -149,6 +155,15 @@ final class AppModel {
     func setPriority(_ priority: Priority, for task: TaskItem) {
         task.priority = priority
         save()
+    }
+
+    private func celebrateIfTodayIsDone(after task: TaskItem) {
+        let calendar = calendar
+        guard UserDefaults.tik.bool(forKey: PrefKey.celebration),
+              TaskFilter.isOnToday(task, now: .now, calendar: calendar),
+              TaskQueries.openTodayCount(in: context, calendar: calendar) == 0 else { return }
+        celebrations += 1
+        Feedback.celebrate()
     }
 
     // MARK: - Lists

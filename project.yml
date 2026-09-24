@@ -40,6 +40,11 @@ targets:
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         ITSAppUsesNonExemptEncryption: false
         UILaunchScreen: {}
+        UIAppFonts:
+          - Vazirmatn-Regular.ttf
+          - Vazirmatn-Medium.ttf
+          - Vazirmatn-SemiBold.ttf
+          - Vazirmatn-Bold.ttf
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: true
         UISupportedInterfaceOrientations:

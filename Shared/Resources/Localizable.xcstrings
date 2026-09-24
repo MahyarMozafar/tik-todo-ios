@@ -1,0 +1,1390 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld of %lld done" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld از %2$lld انجام شد"
+          }
+        }
+      }
+    },
+    "1 Hour Before" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 ساعت قبل"
+          }
+        }
+      }
+    },
+    "15 Minutes Before" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15 دقیقه قبل"
+          }
+        }
+      }
+    },
+    "24-Hour Time" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ساعت 24 ساعته"
+          }
+        }
+      }
+    },
+    "30 Minutes Before" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 دقیقه قبل"
+          }
+        }
+      }
+    },
+    "5 Minutes Before" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 دقیقه قبل"
+          }
+        }
+      }
+    },
+    "A fresh day" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "یک روز تازه"
+          }
+        }
+      }
+    },
+    "Accent Color" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رنگ اصلی"
+          }
+        }
+      }
+    },
+    "Add" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "افزودن"
+          }
+        }
+      }
+    },
+    "Add Photo" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "افزودن عکس"
+          }
+        }
+      }
+    },
+    "Add Subtask" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "افزودن زیرکار"
+          }
+        }
+      }
+    },
+    "All" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "همه"
+          }
+        }
+      }
+    },
+    "All done for today!" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "همه‌ی کارهای امروز انجام شد!"
+          }
+        }
+      }
+    },
+    "All tasks in this list will be deleted too." : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "همه‌ی کارهای این لیست هم حذف می‌شوند."
+          }
+        }
+      }
+    },
+    "Appearance" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ظاهر"
+          }
+        }
+      }
+    },
+    "At the Time of the Task" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سر وقت کار"
+          }
+        }
+      }
+    },
+    "Blue" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آبی"
+          }
+        }
+      }
+    },
+    "Calendar" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقویم"
+          }
+        }
+      }
+    },
+    "Change Photo" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تغییر عکس"
+          }
+        }
+      }
+    },
+    "Close" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بستن"
+          }
+        }
+      }
+    },
+    "Color" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رنگ"
+          }
+        }
+      }
+    },
+    "Colorful Background" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پس‌زمینه‌ی رنگی"
+          }
+        }
+      }
+    },
+    "Completed" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انجام‌شده‌ها"
+          }
+        }
+      }
+    },
+    "Confetti When All Done" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جشن وقتی همه انجام شد"
+          }
+        }
+      }
+    },
+    "Count on App Icon" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عدد روی آیکون برنامه"
+          }
+        }
+      }
+    },
+    "Dark" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تیره"
+          }
+        }
+      }
+    },
+    "Date" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تاریخ"
+          }
+        }
+      }
+    },
+    "Date & Time" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تاریخ و زمان"
+          }
+        }
+      }
+    },
+    "Day" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "روز"
+          }
+        }
+      }
+    },
+    "Delete" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حذف"
+          }
+        }
+      }
+    },
+    "Delete List" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حذف لیست"
+          }
+        }
+      }
+    },
+    "Delete Task" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حذف کار"
+          }
+        }
+      }
+    },
+    "Delete this list?" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "این لیست حذف شود؟"
+          }
+        }
+      }
+    },
+    "Delete this task?" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "این کار حذف شود؟"
+          }
+        }
+      }
+    },
+    "Delete “%@”?" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "«%@» حذف شود؟"
+          }
+        }
+      }
+    },
+    "Discard Changes" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دور انداختن تغییرها"
+          }
+        }
+      }
+    },
+    "Discard your changes?" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تغییرها دور انداخته شوند؟"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انجام‌شده"
+          }
+        }
+      }
+    },
+    "Duplicate" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تکثیر"
+          }
+        }
+      }
+    },
+    "Edit" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ویرایش"
+          }
+        }
+      }
+    },
+    "Edit List" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ویرایش لیست"
+          }
+        }
+      }
+    },
+    "Edit Task" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ویرایش کار"
+          }
+        }
+      }
+    },
+    "Enjoy the rest of your day." : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "از بقیه‌ی روزت لذت ببر."
+          }
+        }
+      }
+    },
+    "Every %lld days" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هر %lld روز"
+          }
+        }
+      }
+    },
+    "Every Day" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هر روز"
+          }
+        }
+      }
+    },
+    "Every Few Days" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هر چند روز"
+          }
+        }
+      }
+    },
+    "Every Month" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هر ماه"
+          }
+        }
+      }
+    },
+    "Every Week" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هر هفته"
+          }
+        }
+      }
+    },
+    "Every Year" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هر سال"
+          }
+        }
+      }
+    },
+    "Everything is done" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "همه‌چیز انجام شد"
+          }
+        }
+      }
+    },
+    "Feel" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حس و حال"
+          }
+        }
+      }
+    },
+    "Find any task by its title, notes or subtasks." : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هر کاری را با عنوان، یادداشت یا زیرکارهایش پیدا کن."
+          }
+        }
+      }
+    },
+    "Graphite" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خاکستری"
+          }
+        }
+      }
+    },
+    "Green" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سبز"
+          }
+        }
+      }
+    },
+    "Gregorian" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "میلادی"
+          }
+        }
+      }
+    },
+    "Haptics" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لرزش"
+          }
+        }
+      }
+    },
+    "Hide Completed" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پنهان کردن انجام‌شده‌ها"
+          }
+        }
+      }
+    },
+    "High" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "زیاد"
+          }
+        }
+      }
+    },
+    "Icon" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آیکون"
+          }
+        }
+      }
+    },
+    "Inbox" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صندوق ورودی"
+          }
+        }
+      }
+    },
+    "Indigo" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نیلی"
+          }
+        }
+      }
+    },
+    "Keep Done Tasks Until Tomorrow" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ماندن کارهای انجام‌شده تا فردا"
+          }
+        }
+      }
+    },
+    "Keep Editing" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ادامه‌ی ویرایش"
+          }
+        }
+      }
+    },
+    "Language" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "زبان"
+          }
+        }
+      }
+    },
+    "Language & Calendar" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "زبان و تقویم"
+          }
+        }
+      }
+    },
+    "Light" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "روشن"
+          }
+        }
+      }
+    },
+    "List" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لیست"
+          }
+        }
+      }
+    },
+    "List Name" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نام لیست"
+          }
+        }
+      }
+    },
+    "Lists" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لیست‌ها"
+          }
+        }
+      }
+    },
+    "Low" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "کم"
+          }
+        }
+      }
+    },
+    "Made by Mahyar Mozafar." : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ساخته‌ی مهیار مظفر."
+          }
+        }
+      }
+    },
+    "Mark as Done" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انجام شد"
+          }
+        }
+      }
+    },
+    "Mark as Not Done" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انجام نشده"
+          }
+        }
+      }
+    },
+    "Medium" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متوسط"
+          }
+        }
+      }
+    },
+    "Mint" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نعنایی"
+          }
+        }
+      }
+    },
+    "More" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بیشتر"
+          }
+        }
+      }
+    },
+    "More Details" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جزئیات بیشتر"
+          }
+        }
+      }
+    },
+    "Move to Tomorrow" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انتقال به فردا"
+          }
+        }
+      }
+    },
+    "My Lists" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لیست‌های من"
+          }
+        }
+      }
+    },
+    "Never" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هرگز"
+          }
+        }
+      }
+    },
+    "New List" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لیست جدید"
+          }
+        }
+      }
+    },
+    "New Task" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "کار جدید"
+          }
+        }
+      }
+    },
+    "Newest" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جدیدترین"
+          }
+        }
+      }
+    },
+    "Next Week" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هفته‌ی بعد"
+          }
+        }
+      }
+    },
+    "No results" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نتیجه‌ای پیدا نشد"
+          }
+        }
+      }
+    },
+    "None" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بدون"
+          }
+        }
+      }
+    },
+    "Not Done" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انجام نشده"
+          }
+        }
+      }
+    },
+    "Notes" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "یادداشت"
+          }
+        }
+      }
+    },
+    "Nothing here yet" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هنوز چیزی اینجا نیست"
+          }
+        }
+      }
+    },
+    "Nothing matches “%@”." : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "چیزی با «%@» پیدا نشد."
+          }
+        }
+      }
+    },
+    "On Certain Days" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "روزهای مشخص"
+          }
+        }
+      }
+    },
+    "Open" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انجام‌نشده"
+          }
+        }
+      }
+    },
+    "Orange" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نارنجی"
+          }
+        }
+      }
+    },
+    "Personal" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شخصی"
+          }
+        }
+      }
+    },
+    "Photo" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عکس"
+          }
+        }
+      }
+    },
+    "Photos" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عکس‌ها"
+          }
+        }
+      }
+    },
+    "Pink" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صورتی"
+          }
+        }
+      }
+    },
+    "Priority" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اولویت"
+          }
+        }
+      }
+    },
+    "Purple" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بنفش"
+          }
+        }
+      }
+    },
+    "Red" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قرمز"
+          }
+        }
+      }
+    },
+    "Remind Me" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "زمان یادآوری"
+          }
+        }
+      }
+    },
+    "Remind Me in %lld Minutes" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld دقیقه‌ی دیگر یادم بنداز"
+          }
+        }
+      }
+    },
+    "Reminders" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "یادآورها"
+          }
+        }
+      }
+    },
+    "Reminders are sent for tasks that have a time." : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "برای کارهایی که ساعت دارند یادآور فرستاده می‌شود."
+          }
+        }
+      }
+    },
+    "Remove Photo" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حذف عکس"
+          }
+        }
+      }
+    },
+    "Repeat" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تکرار"
+          }
+        }
+      }
+    },
+    "Repeats" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تکرار می‌شود"
+          }
+        }
+      }
+    },
+    "Scheduled" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "برنامه‌ریزی‌شده"
+          }
+        }
+      }
+    },
+    "Search" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جستجو"
+          }
+        }
+      }
+    },
+    "Search your tasks" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "کارهایت را جستجو کن"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تنظیمات"
+          }
+        }
+      }
+    },
+    "Shamsi" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شمسی"
+          }
+        }
+      }
+    },
+    "Show Completed (%lld)" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نمایش انجام‌شده‌ها (%lld)"
+          }
+        }
+      }
+    },
+    "Show Progress" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نمایش پیشرفت"
+          }
+        }
+      }
+    },
+    "Sort Tasks By" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مرتب‌سازی بر اساس"
+          }
+        }
+      }
+    },
+    "Sounds" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صدا"
+          }
+        }
+      }
+    },
+    "Source Code" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "کد منبع"
+          }
+        }
+      }
+    },
+    "Subtask" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "زیرکار"
+          }
+        }
+      }
+    },
+    "Subtasks" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "زیرکارها"
+          }
+        }
+      }
+    },
+    "System" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سیستم"
+          }
+        }
+      }
+    },
+    "Tap + to add a task." : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "برای افزودن کار روی + بزن."
+          }
+        }
+      }
+    },
+    "Tap + to add your first task." : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "برای افزودن اولین کارت روی + بزن."
+          }
+        }
+      }
+    },
+    "Task Details" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جزئیات کار"
+          }
+        }
+      }
+    },
+    "Tasks you finish will show up here." : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "کارهایی که انجام می‌دهی اینجا دیده می‌شوند."
+          }
+        }
+      }
+    },
+    "Tasks, notes and subtasks" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "کارها، یادداشت‌ها و زیرکارها"
+          }
+        }
+      }
+    },
+    "Teal" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سبزآبی"
+          }
+        }
+      }
+    },
+    "Theme" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پوسته"
+          }
+        }
+      }
+    },
+    "Time" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "زمان"
+          }
+        }
+      }
+    },
+    "Today" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "امروز"
+          }
+        }
+      }
+    },
+    "Tomorrow" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "فردا"
+          }
+        }
+      }
+    },
+    "Turn On Notifications in Settings" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "روشن کردن اعلان‌ها در تنظیمات"
+          }
+        }
+      }
+    },
+    "Turn off what you don't use. It is hidden when you add or edit a task." : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هر چیزی را که استفاده نمی‌کنی خاموش کن. موقع افزودن یا ویرایش کار دیده نمی‌شود."
+          }
+        }
+      }
+    },
+    "Version" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نسخه"
+          }
+        }
+      }
+    },
+    "What do you want to do?" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "چه کاری می‌خواهی انجام بدهی؟"
+          }
+        }
+      }
+    },
+    "When you tick a repeating task, the next one is added for you." : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وقتی یک کار تکراری را تیک می‌زنی، کار بعدی خودش اضافه می‌شود."
+          }
+        }
+      }
+    },
+    "Work" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "کاری"
+          }
+        }
+      }
+    },
+    "Yellow" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "زرد"
+          }
+        }
+      }
+    },
+    "Yesterday" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دیروز"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

@@ -46,6 +46,7 @@ struct TaskRow: View {
                     .foregroundStyle(isDone ? .secondary : .primary)
                     .lineLimit(3)
                     .frame(maxWidth: .infinity, alignment: .leading)
+                    .accessibilityIdentifier("taskTitle")
 
                 if hasDetails {
                     details

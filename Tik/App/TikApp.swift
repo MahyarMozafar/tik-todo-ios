@@ -9,6 +9,7 @@ struct TikApp: App {
         #if DEBUG
         DemoData.applyLaunchArguments(to: AppModel.shared)
         #endif
+        Vazirmatn.applyToNavigationBars(for: Preferences.current().language)
     }
 
     var body: some Scene {

@@ -19,6 +19,12 @@ enum DemoData {
         }
 
         let defaults = UserDefaults.tik
+        if arguments.contains("-demo") {
+            // Start from the default settings, so every run looks the same.
+            for key in defaults.dictionaryRepresentation().keys where key != PrefKey.didCreateStarterLists {
+                defaults.removeObject(forKey: key)
+            }
+        }
         if let language = value(after: "-lang") { defaults.set(language, forKey: PrefKey.language) }
         if let theme = value(after: "-theme") { defaults.set(theme, forKey: PrefKey.theme) }
         if let accent = value(after: "-accent") { defaults.set(accent, forKey: PrefKey.accent) }

@@ -24,6 +24,7 @@ struct AppRoot: View {
             .environment(\.locale, formatting.locale)
             .environment(\.calendar, formatting.calendar)
             .environment(\.layoutDirection, language.layoutDirection)
+            .font(Vazirmatn.body(for: language))
             .tint(accent.color)
             .preferredColorScheme(theme.colorScheme)
             .onChange(of: scenePhase) { _, phase in
@@ -35,6 +36,7 @@ struct AppRoot: View {
                 // Reminder buttons and texts follow the app's language.
                 Reminders.registerActions(language: newLanguage)
                 model.refreshReminders()
+                Vazirmatn.applyToNavigationBars(for: newLanguage)
                 // The few words iOS draws itself (like "Cancel" in search)
                 // follow this after the next launch.
                 UserDefaults.standard.set([newLanguage.rawValue], forKey: "AppleLanguages")

@@ -17,6 +17,7 @@ struct TodayView: View {
 
     @State private var now = Date.now
     @State private var isAdding = false
+    @State private var editing: EditorRequest?
 
     var body: some View {
         let todays = TaskFilter.today(datedTasks, now: now, calendar: calendar, order: sortOrder)
@@ -37,7 +38,7 @@ struct TodayView: View {
                     TaskRow(task: task, showsDay: false) {
                         withAnimation(.snappy) { _ = model.toggle(task) }
                     }
-                    .taskActions(for: task) {}
+                    .taskActions(for: task) { editing = .edit(task) }
                     .cardRow()
                 }
             }
@@ -54,9 +55,14 @@ struct TodayView: View {
                 withAnimation(.snappy) {
                     _ = model.addTask(title: title, dueDate: calendar.startOfDay(for: .now))
                 }
+            } onShowDetails: { title in
+                editing = .new(title: title, dueDate: calendar.startOfDay(for: .now))
             }
         }
         .toolbar(.hidden, for: .navigationBar)
+        .sheet(item: $editing) { request in
+            TaskEditorView(request: request)
+        }
         .onReceive(NotificationCenter.default.publisher(for: .NSCalendarDayChanged)) { _ in
             now = .now
         }

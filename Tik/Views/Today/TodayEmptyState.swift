@@ -15,10 +15,10 @@ struct TodayEmptyState: View {
                 .frame(width: 96, height: 96)
                 .glassEffect(.regular, in: .circle)
 
-            Text(allDone ? "Everything is done" : "A fresh day")
+            Text(allDone ? LocalizedStringKey("Everything is done") : "A fresh day")
                 .tikFont(.title3, weight: .semibold)
 
-            Text(allDone ? "Enjoy the rest of your day." : "Tap + to add your first task.")
+            Text(allDone ? LocalizedStringKey("Enjoy the rest of your day.") : "Tap + to add your first task.")
                 .tikFont(.subheadline)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)

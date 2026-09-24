@@ -78,6 +78,19 @@ final class AppModel {
         return task
     }
 
+    /// Saves what the editor changed. With no `task`, a new task is made.
+    func save(_ draft: TaskDraft, to task: TaskItem?) {
+        let target: TaskItem
+        if let task {
+            target = task
+        } else {
+            target = TaskItem(title: draft.trimmedTitle)
+            context.insert(target)
+        }
+        draft.apply(to: target, in: context, calendar: calendar)
+        save()
+    }
+
     /// Ticks or unticks a task. Returns true when the task is now done.
     @discardableResult
     func toggle(_ task: TaskItem) -> Bool {

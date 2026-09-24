@@ -53,6 +53,19 @@ struct TaskDraftTests {
         #expect(task.repeatRule == nil)
     }
 
+    @Test func monthlyRepeatRemembersTheDayOfTheMonth() throws {
+        let context = try makeContext()
+        let task = makeTask("Pay rent", in: context)
+
+        var draft = TaskDraft(request: .edit(task))
+        draft.hasDate = true
+        draft.day = date(2026, 1, 31)
+        draft.repeatRule = RepeatRule(frequency: .monthly)
+        draft.apply(to: task, in: context, calendar: gregorian)
+
+        #expect(task.repeatRule?.dayOfMonth == 31)
+    }
+
     @Test func titleIsTrimmedAndRequired() {
         var draft = TaskDraft(request: .new(title: "  Buy milk  "))
         #expect(draft.trimmedTitle == "Buy milk")

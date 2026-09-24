@@ -46,6 +46,19 @@ struct RepeatRuleTests {
         #expect(next == date(2026, 3, 31))
     }
 
+    @Test func monthlyGoesBackToThe31stAfterAShortMonth() {
+        // January 31 became February 28; the next one is March 31 again.
+        var rule = RepeatRule(frequency: .monthly)
+        rule.dayOfMonth = 31
+        let next = rule.nextDueDate(after: date(2026, 2, 28), now: date(2026, 2, 28, 9), calendar: gregorian)
+        #expect(next == date(2026, 3, 31))
+
+        // Without the remembered day, it would stay on the 28th.
+        let plain = RepeatRule(frequency: .monthly)
+        #expect(plain.nextDueDate(after: date(2026, 2, 28), now: date(2026, 2, 28, 9), calendar: gregorian)
+                == date(2026, 3, 28))
+    }
+
     @Test func monthlyWithShamsiFollowsShamsiMonths() {
         // 1 Mehr 1405 is followed by 1 Aban 1405.
         let due = persian.date(from: DateComponents(year: 1405, month: 7, day: 1))!

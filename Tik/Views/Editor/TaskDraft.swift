@@ -74,7 +74,14 @@ struct TaskDraft: Equatable {
         task.priority = priority
         task.dueDate = dueDate(calendar: calendar)
         task.hasTime = hasDate && hasTime
-        task.repeatRule = hasDate ? repeatRule : nil
+        task.repeatRule = hasDate ? repeatRule.map { rule in
+            // Remember the day of the month, so monthly repeats stay on it.
+            var rule = rule
+            if let due = task.dueDate, rule.frequency == .monthly || rule.frequency == .yearly {
+                rule.dayOfMonth = calendar.component(.day, from: due)
+            }
+            return rule
+        } : nil
         if task.photoData != photoData {
             task.photoData = photoData
         }

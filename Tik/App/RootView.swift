@@ -15,6 +15,11 @@ struct RootView: View {
             Tab("Lists", systemImage: "square.stack", value: AppTab.lists) {
                 ListsTab()
             }
+            Tab(value: AppTab.search, role: .search) {
+                NavigationStack {
+                    SearchView()
+                }
+            }
         }
         .tabBarMinimizeBehavior(.onScrollDown)
     }

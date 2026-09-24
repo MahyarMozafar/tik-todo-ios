@@ -119,6 +119,33 @@ final class AppModel {
         save()
     }
 
+    // MARK: - Lists
+
+    func saveList(_ list: TaskList?, name: String, symbol: String, color: AccentChoice) {
+        if let list {
+            list.name = name
+            list.symbol = symbol
+            list.colorName = color.rawValue
+        } else {
+            let count = (try? context.fetchCount(FetchDescriptor<TaskList>())) ?? 0
+            context.insert(TaskList(name: name, symbol: symbol, colorName: color.rawValue, sortIndex: count))
+        }
+        save()
+    }
+
+    /// Deletes a list and every task in it.
+    func deleteList(_ list: TaskList) {
+        context.delete(list)
+        save()
+    }
+
+    func reorderLists(_ lists: [TaskList]) {
+        for (index, list) in lists.enumerated() {
+            list.sortIndex = index
+        }
+        save()
+    }
+
     // MARK: - Changes made by the widget
 
     /// Starts a fresh context if the widget changed tasks since last time,

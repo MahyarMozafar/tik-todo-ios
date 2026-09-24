@@ -1,9 +1,21 @@
 import SwiftUI
 
 struct RootView: View {
+    @Environment(AppModel.self) private var model
+
     var body: some View {
-        NavigationStack {
-            TodayView()
+        @Bindable var model = model
+
+        TabView(selection: $model.selectedTab) {
+            Tab("Today", systemImage: "sun.max", value: AppTab.today) {
+                NavigationStack {
+                    TodayView()
+                }
+            }
+            Tab("Lists", systemImage: "square.stack", value: AppTab.lists) {
+                ListsTab()
+            }
         }
+        .tabBarMinimizeBehavior(.onScrollDown)
     }
 }

@@ -37,6 +37,7 @@
 		41F3A349CDFBFF24F6BCE37E /* Subtask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A402D2DE91E8D8F3E91F0699 /* Subtask.swift */; };
 		42C375B3CABF77EFC0FCAE30 /* RepeatPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165793DBA13C598AAEB00F45 /* RepeatPickerView.swift */; };
 		470DDA1D474497D22BCB0662 /* QuickAddBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB555A185C7E187D3E26D /* QuickAddBar.swift */; };
+		4B74712B26697E7F6FBBC493 /* SplitRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3C241F435BF889E8565258 /* SplitRootView.swift */; };
 		4F012E2CDA6322BB7E839EFF /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9451CAE510736B00D6C71 /* ProgressBar.swift */; };
 		53BD76670F1305FB0C7D25BB /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E8E3307E8DC0745CF8F520 /* TodayView.swift */; };
 		556800889D763EF36190501D /* TikApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931B452F7633705F8646B76C /* TikApp.swift */; };
@@ -191,6 +192,7 @@
 		B2D4A994C47086512BDD3B0A /* ImageResizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResizer.swift; sourceTree = "<group>"; };
 		B8410A2F462F35412E6FDA3B /* RepeatRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatRule.swift; sourceTree = "<group>"; };
 		B842454951998D6ED4536B25 /* TodayHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayHeader.swift; sourceTree = "<group>"; };
+		BA3C241F435BF889E8565258 /* SplitRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitRootView.swift; sourceTree = "<group>"; };
 		C038E54A755F51C0C080F320 /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
 		C9A06435EFF6097F94E37735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CAA0F5B870ACAA8EC3A051C1 /* ListsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsTests.swift; sourceTree = "<group>"; };
@@ -478,6 +480,7 @@
 				2CBBA84D66E6F7A974BB4301 /* AppModel.swift */,
 				3837775F5BE03483FDD3C55E /* AppRoot.swift */,
 				DA72DF0478830FC0A55EC475 /* RootView.swift */,
+				BA3C241F435BF889E8565258 /* SplitRootView.swift */,
 				931B452F7633705F8646B76C /* TikApp.swift */,
 			);
 			path = App;
@@ -694,6 +697,7 @@
 				E309CEB8CB6D1DF88404E659 /* SearchView.swift in Sources */,
 				2D3195DC9F77630A01F7E4FF /* SettingsView.swift in Sources */,
 				1C1E4AFA22F7B68E2C27F3E0 /* SharedStore.swift in Sources */,
+				4B74712B26697E7F6FBBC493 /* SplitRootView.swift in Sources */,
 				41F3A349CDFBFF24F6BCE37E /* Subtask.swift in Sources */,
 				C2A716B44BE878991D8D38A4 /* TaskActions.swift in Sources */,
 				58A1A05FBA253B85F0ABA2CC /* TaskActionsModifier.swift in Sources */,

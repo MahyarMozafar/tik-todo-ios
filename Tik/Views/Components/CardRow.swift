@@ -9,3 +9,11 @@ extension View {
             .listRowInsets(EdgeInsets(top: top, leading: 16, bottom: bottom, trailing: 16))
     }
 }
+
+extension View {
+    /// Keeps lists at a comfortable reading width on iPad, centered.
+    func readableWidth(_ width: CGFloat = 720) -> some View {
+        frame(maxWidth: width)
+            .frame(maxWidth: .infinity)
+    }
+}

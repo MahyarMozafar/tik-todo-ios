@@ -7,6 +7,7 @@ struct TodayHeader: View {
 
     @Environment(\.dateFormatting) private var formatting
     @Environment(\.appLanguage) private var language
+    @Environment(\.horizontalSizeClass) private var sizeClass
 
     var body: some View {
         HStack(alignment: .center, spacing: 12) {
@@ -25,19 +26,26 @@ struct TodayHeader: View {
 
             Spacer(minLength: 0)
 
-            Button(action: onOpenSettings) {
-                Image(systemName: "gearshape")
-                    .font(.title3.weight(.medium))
-                    .frame(width: 28, height: 28)
+            // On iPad, Settings lives in the sidebar instead.
+            if sizeClass != .regular {
+                settingsButton
             }
-            .buttonStyle(.glass)
-            .buttonBorderShape(.circle)
-            .controlSize(.large)
-            .accessibilityLabel(Text("Settings"))
-            .accessibilityIdentifier("settingsButton")
         }
         .padding(.horizontal, 20)
         .padding(.top, 4)
         .padding(.bottom, 10)
+    }
+
+    private var settingsButton: some View {
+        Button(action: onOpenSettings) {
+            Image(systemName: "gearshape")
+                .font(.title3.weight(.medium))
+                .frame(width: 28, height: 28)
+        }
+        .buttonStyle(.glass)
+        .buttonBorderShape(.circle)
+        .controlSize(.large)
+        .accessibilityLabel(Text("Settings"))
+        .accessibilityIdentifier("settingsButton")
     }
 }

@@ -61,6 +61,7 @@ struct TodayView: View {
                 editing = .new(title: title, dueDate: calendar.startOfDay(for: .now))
             }
         }
+        .readableWidth()
         .background { AppBackground() }
         .overlay {
             ConfettiView(trigger: model.celebrations)

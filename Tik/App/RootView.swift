@@ -1,6 +1,19 @@
 import SwiftUI
 
+/// Tabs on iPhone, a sidebar on iPad (and on any wide window).
 struct RootView: View {
+    @Environment(\.horizontalSizeClass) private var sizeClass
+
+    var body: some View {
+        if sizeClass == .regular {
+            SplitRootView()
+        } else {
+            TabRootView()
+        }
+    }
+}
+
+struct TabRootView: View {
     @Environment(AppModel.self) private var model
 
     var body: some View {

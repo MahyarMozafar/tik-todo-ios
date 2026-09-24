@@ -15,13 +15,32 @@ enum SearchScope: Hashable, CaseIterable {
     }
 }
 
-/// Finds tasks by title, notes or subtasks, in every list.
+/// The Search tab on iPhone.
 struct SearchView: View {
+    @State private var query = ""
+    @State private var scope: SearchScope = .all
+
+    var body: some View {
+        SearchResults(query: query, scope: scope)
+            .navigationTitle(Text("Search"))
+            .searchable(text: $query, prompt: Text("Tasks, notes and subtasks"))
+            .searchScopes($scope) {
+                ForEach(SearchScope.allCases, id: \.self) { scope in
+                    Text(scope.title).tag(scope)
+                }
+            }
+    }
+}
+
+/// Finds tasks by title, notes or subtasks, in every list.
+/// Used by the Search tab on iPhone and the sidebar search on iPad.
+struct SearchResults: View {
+    let query: String
+    let scope: SearchScope
+
     @Environment(AppModel.self) private var model
     @Query(sort: \TaskItem.createdAt, order: .reverse) private var tasks: [TaskItem]
 
-    @State private var query = ""
-    @State private var scope: SearchScope = .all
     @State private var editing: EditorRequest?
 
     var body: some View {
@@ -39,7 +58,6 @@ struct SearchView: View {
         .listStyle(.plain)
         .scrollContentBackground(.hidden)
         .scrollDismissesKeyboard(.immediately)
-        .background { AppBackground() }
         .overlay {
             if query.trimmingCharacters(in: .whitespaces).isEmpty {
                 EmptyStateView(symbol: "magnifyingglass",
@@ -51,13 +69,8 @@ struct SearchView: View {
                                message: Text("Nothing matches \u{201C}\(query)\u{201D}."))
             }
         }
-        .navigationTitle(Text("Search"))
-        .searchable(text: $query, prompt: Text("Tasks, notes and subtasks"))
-        .searchScopes($scope) {
-            ForEach(SearchScope.allCases, id: \.self) { scope in
-                Text(scope.title).tag(scope)
-            }
-        }
+        .readableWidth()
+        .background { AppBackground() }
         .sheet(item: $editing) { request in
             TaskEditorView(request: request)
         }

@@ -34,7 +34,6 @@ struct ListDetailView: View {
         .listStyle(.plain)
         .scrollContentBackground(.hidden)
         .scrollDismissesKeyboard(.interactively)
-        .background { AppBackground() }
         .navigationTitle(title)
         .toolbar { toolbar }
         .tint(tint)
@@ -49,6 +48,8 @@ struct ListDetailView: View {
                 }
             }
         }
+        .readableWidth()
+        .background { AppBackground() }
         .sheet(item: $editing) { request in
             TaskEditorView(request: request)
         }

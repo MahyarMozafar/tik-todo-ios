@@ -31,5 +31,13 @@ struct AppRoot: View {
                     model.reloadIfChangedElsewhere()
                 }
             }
+            .onChange(of: language) { _, newLanguage in
+                // Reminder buttons and texts follow the app's language.
+                Reminders.registerActions(language: newLanguage)
+                model.refreshReminders()
+            }
+            .onChange(of: use24Hour) {
+                model.refreshReminders()
+            }
     }
 }

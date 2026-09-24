@@ -65,6 +65,17 @@ final class AppModel {
             print("Tik: could not save: \(error)")
         }
         WidgetCenter.shared.reloadAllTimelines()
+        updateBadge()
+    }
+
+    /// Shows the number of open tasks for today on the app icon, when that
+    /// is turned on in Settings.
+    func updateBadge() {
+        let preferences = preferences
+        let count = preferences.showsBadge
+            ? TaskQueries.openTodayCount(in: context, calendar: preferences.formatting.calendar)
+            : 0
+        Reminders.setBadge(count)
     }
 
     // MARK: - Tasks
@@ -89,6 +100,16 @@ final class AppModel {
         }
         draft.apply(to: target, in: context, calendar: calendar)
         save()
+
+        if target.hasTime && !target.isDone {
+            // The first task with a time is when we ask to send reminders.
+            Task {
+                await Reminders.requestPermission()
+                Reminders.sync(target)
+            }
+        } else {
+            Reminders.sync(target)
+        }
     }
 
     /// Ticks or unticks a task. Returns true when the task is now done.
@@ -96,22 +117,33 @@ final class AppModel {
     func toggle(_ task: TaskItem) -> Bool {
         let result = TaskActions.toggle(task, in: context, calendar: calendar)
         save()
+        Reminders.sync(task)
+        if let next = result.nextOccurrence {
+            Reminders.sync(next)
+        }
+        if !result.removedIDs.isEmpty {
+            Reminders.remove(ids: result.removedIDs)
+        }
         return result.isDone
     }
 
     func delete(_ task: TaskItem) {
+        let id = task.id
         context.delete(task)
         save()
+        Reminders.remove(ids: [id])
     }
 
     func moveToTomorrow(_ task: TaskItem) {
         TaskActions.moveToTomorrow(task, calendar: calendar)
         save()
+        Reminders.sync(task)
     }
 
     func duplicate(_ task: TaskItem) {
-        TaskActions.duplicate(task, in: context)
+        let copy = TaskActions.duplicate(task, in: context)
         save()
+        Reminders.sync(copy)
     }
 
     func setPriority(_ priority: Priority, for task: TaskItem) {
@@ -135,8 +167,10 @@ final class AppModel {
 
     /// Deletes a list and every task in it.
     func deleteList(_ list: TaskList) {
+        let ids = list.tasks.map(\.id)
         context.delete(list)
         save()
+        Reminders.remove(ids: ids)
     }
 
     func reorderLists(_ lists: [TaskList]) {
@@ -144,6 +178,27 @@ final class AppModel {
             list.sortIndex = index
         }
         save()
+    }
+
+    // MARK: - Reminders
+
+    /// Runs a button tapped on a reminder, or opens Today when the reminder
+    /// itself was tapped.
+    func handleReminder(action: String, taskID: String) {
+        guard action == Reminders.doneActionID else {
+            selectedTab = .today
+            return
+        }
+        guard let id = UUID(uuidString: taskID),
+              let task = TaskQueries.task(withID: id, in: context),
+              !task.isDone else { return }
+        toggle(task)
+    }
+
+    /// Schedules every open task again, after a reminder setting changed.
+    func refreshReminders() {
+        Reminders.resyncAll(TaskQueries.openTasks(in: context))
+        updateBadge()
     }
 
     // MARK: - Changes made by the widget

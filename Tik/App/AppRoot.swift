@@ -35,6 +35,9 @@ struct AppRoot: View {
                 // Reminder buttons and texts follow the app's language.
                 Reminders.registerActions(language: newLanguage)
                 model.refreshReminders()
+                // The few words iOS draws itself (like "Cancel" in search)
+                // follow this after the next launch.
+                UserDefaults.standard.set([newLanguage.rawValue], forKey: "AppleLanguages")
             }
             .onChange(of: use24Hour) {
                 model.refreshReminders()

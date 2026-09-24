@@ -17,6 +17,7 @@
 		1D7AB17AE269DA2ECD238EAE /* CardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEA13AD7A05E8CFF40A0EEE /* CardRow.swift */; };
 		213633BBC2C332B5D7B10AE8 /* ProgressCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A663F9D68429C99E136CB2 /* ProgressCard.swift */; };
 		21E8301D9BBB90FE24F6ECCD /* AppBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C26A3DD94E0909CDC835600 /* AppBackground.swift */; };
+		2D3195DC9F77630A01F7E4FF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D4B0492A0E200BEABC3D14 /* SettingsView.swift */; };
 		2EA0DC6381CAC5983010E3F0 /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DB99D554B53D44BC7EEDD /* DateFormatting.swift */; };
 		365F807A28A4358C3663E1A9 /* TodayHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B842454951998D6ED4536B25 /* TodayHeader.swift */; };
 		41F3A349CDFBFF24F6BCE37E /* Subtask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A402D2DE91E8D8F3E91F0699 /* Subtask.swift */; };
@@ -48,6 +49,7 @@
 		C4A43EFB6754E9732A0653FB /* AppRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3837775F5BE03483FDD3C55E /* AppRoot.swift */; };
 		CA4538375686E2496645360F /* TodayFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AFC07D898CDFBBE4DA89AF /* TodayFlowTests.swift */; };
 		CA826DC355801C78C272B11F /* EnvironmentValues+Tik.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D31A4DC564A7C627D5C93 /* EnvironmentValues+Tik.swift */; };
+		DA6C74B6F8A2F1F0260D9E4B /* SettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF20207B008ED63FA60EE3DE /* SettingsTests.swift */; };
 		DFC99CBC3A79275898D6E9E5 /* TaskDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7E9BA1F392C7D70A9DBF2 /* TaskDraft.swift */; };
 		E309CEB8CB6D1DF88404E659 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A543154DC4F701571F2FFC97 /* SearchView.swift */; };
 		E3E93DDC303F6D0776B0C93B /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBA84D66E6F7A974BB4301 /* AppModel.swift */; };
@@ -70,6 +72,7 @@
 /* Begin PBXFileReference section */
 		0443F7F1BE4295648FCF1A3E /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		06558992952DFD50B335220D /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
+		11D4B0492A0E200BEABC3D14 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		165793DBA13C598AAEB00F45 /* RepeatPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatPickerView.swift; sourceTree = "<group>"; };
 		1A809E0746F8A0AEFAFB3032 /* ListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsView.swift; sourceTree = "<group>"; };
 		1C26A3DD94E0909CDC835600 /* AppBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackground.swift; sourceTree = "<group>"; };
@@ -102,6 +105,7 @@
 		A402D2DE91E8D8F3E91F0699 /* Subtask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subtask.swift; sourceTree = "<group>"; };
 		A4BAAA6208190C380EEBEAC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A543154DC4F701571F2FFC97 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		AF20207B008ED63FA60EE3DE /* SettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTests.swift; sourceTree = "<group>"; };
 		B2D4A994C47086512BDD3B0A /* ImageResizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResizer.swift; sourceTree = "<group>"; };
 		B8410A2F462F35412E6FDA3B /* RepeatRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatRule.swift; sourceTree = "<group>"; };
 		B842454951998D6ED4536B25 /* TodayHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayHeader.swift; sourceTree = "<group>"; };
@@ -225,9 +229,18 @@
 				A73B3927EEEA8FB44FC3B27C /* Editor */,
 				28BAF86B5FDE8D5DC179945E /* Lists */,
 				2849B936F7761243BC944F9B /* Search */,
+				45EC6CACC8369291A75F2F30 /* Settings */,
 				8D433F98EF00CF0825506BF8 /* Today */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		45EC6CACC8369291A75F2F30 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				11D4B0492A0E200BEABC3D14 /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		515766327E08506B631B62E1 /* Debug */ = {
@@ -244,6 +257,7 @@
 				6F589802E64FBF4CB4C78251 /* EditorTests.swift */,
 				CAA0F5B870ACAA8EC3A051C1 /* ListsTests.swift */,
 				F0DE59100414762F1FA5C355 /* SearchTests.swift */,
+				AF20207B008ED63FA60EE3DE /* SettingsTests.swift */,
 				28AFC07D898CDFBBE4DA89AF /* TodayFlowTests.swift */,
 			);
 			path = TikUITests;
@@ -479,6 +493,7 @@
 				1CEEA2868EB379259B2B6E80 /* RepeatRule.swift in Sources */,
 				03F20F5737511A948FB7640F /* RootView.swift in Sources */,
 				E309CEB8CB6D1DF88404E659 /* SearchView.swift in Sources */,
+				2D3195DC9F77630A01F7E4FF /* SettingsView.swift in Sources */,
 				1C1E4AFA22F7B68E2C27F3E0 /* SharedStore.swift in Sources */,
 				41F3A349CDFBFF24F6BCE37E /* Subtask.swift in Sources */,
 				C2A716B44BE878991D8D38A4 /* TaskActions.swift in Sources */,
@@ -505,6 +520,7 @@
 				8C38466C3D784854E939224F /* EditorTests.swift in Sources */,
 				AC7396773B9BB0809D910050 /* ListsTests.swift in Sources */,
 				C275317BEF3F46AF9E91D2C1 /* SearchTests.swift in Sources */,
+				DA6C74B6F8A2F1F0260D9E4B /* SettingsTests.swift in Sources */,
 				CA4538375686E2496645360F /* TodayFlowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

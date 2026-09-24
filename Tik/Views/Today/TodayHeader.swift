@@ -34,6 +34,7 @@ struct TodayHeader: View {
             .buttonBorderShape(.circle)
             .controlSize(.large)
             .accessibilityLabel(Text("Settings"))
+            .accessibilityIdentifier("settingsButton")
         }
         .padding(.horizontal, 20)
         .padding(.top, 4)

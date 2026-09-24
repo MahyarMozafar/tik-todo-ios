@@ -6,4 +6,7 @@ extension EnvironmentValues {
 
     /// Formats dates with the calendar and language picked in Settings.
     @Entry var dateFormatting = DateFormatting(language: .english, calendarKind: .persian, use24Hour: true)
+
+    /// The accent color picked in Settings.
+    @Entry var accent: AccentChoice = .blue
 }

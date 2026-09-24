@@ -9,38 +9,66 @@
 /* Begin PBXBuildFile section */
 		01580527AE36624447B083E8 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA5AD5F10FD8A825AF58295 /* Preferences.swift */; };
 		036409842E0FE72CE25D1A9C /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = C038E54A755F51C0C080F320 /* Priority.swift */; };
+		03F20F5737511A948FB7640F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72DF0478830FC0A55EC475 /* RootView.swift */; };
 		0B4E07170EDF50C552328DE3 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528ED7FFF663B587801C96B4 /* TaskItem.swift */; };
 		1C1E4AFA22F7B68E2C27F3E0 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06558992952DFD50B335220D /* SharedStore.swift */; };
 		1CEEA2868EB379259B2B6E80 /* RepeatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8410A2F462F35412E6FDA3B /* RepeatRule.swift */; };
+		1D7AB17AE269DA2ECD238EAE /* CardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEA13AD7A05E8CFF40A0EEE /* CardRow.swift */; };
+		213633BBC2C332B5D7B10AE8 /* ProgressCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A663F9D68429C99E136CB2 /* ProgressCard.swift */; };
+		21E8301D9BBB90FE24F6ECCD /* AppBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C26A3DD94E0909CDC835600 /* AppBackground.swift */; };
 		2EA0DC6381CAC5983010E3F0 /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DB99D554B53D44BC7EEDD /* DateFormatting.swift */; };
+		365F807A28A4358C3663E1A9 /* TodayHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B842454951998D6ED4536B25 /* TodayHeader.swift */; };
 		41F3A349CDFBFF24F6BCE37E /* Subtask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A402D2DE91E8D8F3E91F0699 /* Subtask.swift */; };
+		53BD76670F1305FB0C7D25BB /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E8E3307E8DC0745CF8F520 /* TodayView.swift */; };
 		556800889D763EF36190501D /* TikApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931B452F7633705F8646B76C /* TikApp.swift */; };
+		58A1A05FBA253B85F0ABA2CC /* TaskActionsModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6988DF38B75C5541A28250BD /* TaskActionsModifier.swift */; };
+		7D02D56882021B42D2D6C302 /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3BE30D3A57438C19E4DED3 /* DemoData.swift */; };
 		893B39461026D5EF1228B758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719B8F002CD778015BA32C32 /* Assets.xcassets */; };
 		8DD6751702C9BC6E2AC6B75B /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6801D7912079A8311052E7BE /* TaskList.swift */; };
+		9392FADE7510E60495B1A24D /* TodayEmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699939A7DD19A0723AA7FBBB /* TodayEmptyState.swift */; };
 		A46A98221DE5542BCA78926A /* TaskFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167DB3F2F4CBA025C2AC39D /* TaskFilter.swift */; };
+		B88FC7D692350172C57D17BF /* CheckCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99287CDB35B3893C287A6B9C /* CheckCircle.swift */; };
+		BAC7613DD760B90B37EB7CC1 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2118FB27F6358DB8C73626 /* Typography.swift */; };
 		C2A716B44BE878991D8D38A4 /* TaskActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A88B4DF01F8671EAB2E987D /* TaskActions.swift */; };
+		C4A43EFB6754E9732A0653FB /* AppRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3837775F5BE03483FDD3C55E /* AppRoot.swift */; };
 		CA826DC355801C78C272B11F /* EnvironmentValues+Tik.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D31A4DC564A7C627D5C93 /* EnvironmentValues+Tik.swift */; };
+		E3E93DDC303F6D0776B0C93B /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBA84D66E6F7A974BB4301 /* AppModel.swift */; };
+		EF79B16B003A5DCB9F82C37C /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C09D07A4F6B0DB6F655AF15 /* TaskRow.swift */; };
 		FB6A0224AB5581F1D7A62545 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = A020D9BDD69F2A4B09F8B46A /* L10n.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		06558992952DFD50B335220D /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
+		1C26A3DD94E0909CDC835600 /* AppBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackground.swift; sourceTree = "<group>"; };
 		1EA5AD5F10FD8A825AF58295 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		223DB99D554B53D44BC7EEDD /* DateFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatting.swift; sourceTree = "<group>"; };
+		2CBBA84D66E6F7A974BB4301 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		3837775F5BE03483FDD3C55E /* AppRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoot.swift; sourceTree = "<group>"; };
+		39A663F9D68429C99E136CB2 /* ProgressCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCard.swift; sourceTree = "<group>"; };
+		4D2118FB27F6358DB8C73626 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		528ED7FFF663B587801C96B4 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 		6801D7912079A8311052E7BE /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		6988DF38B75C5541A28250BD /* TaskActionsModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskActionsModifier.swift; sourceTree = "<group>"; };
+		699939A7DD19A0723AA7FBBB /* TodayEmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayEmptyState.swift; sourceTree = "<group>"; };
 		6C1D31A4DC564A7C627D5C93 /* EnvironmentValues+Tik.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Tik.swift"; sourceTree = "<group>"; };
 		719B8F002CD778015BA32C32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A88B4DF01F8671EAB2E987D /* TaskActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskActions.swift; sourceTree = "<group>"; };
 		931B452F7633705F8646B76C /* TikApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikApp.swift; sourceTree = "<group>"; };
+		99287CDB35B3893C287A6B9C /* CheckCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckCircle.swift; sourceTree = "<group>"; };
+		9B3BE30D3A57438C19E4DED3 /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
+		9C09D07A4F6B0DB6F655AF15 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
 		A020D9BDD69F2A4B09F8B46A /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		A402D2DE91E8D8F3E91F0699 /* Subtask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subtask.swift; sourceTree = "<group>"; };
 		B8410A2F462F35412E6FDA3B /* RepeatRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatRule.swift; sourceTree = "<group>"; };
+		B842454951998D6ED4536B25 /* TodayHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayHeader.swift; sourceTree = "<group>"; };
 		C038E54A755F51C0C080F320 /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
 		C9A06435EFF6097F94E37735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DA72DF0478830FC0A55EC475 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		E167DB3F2F4CBA025C2AC39D /* TaskFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFilter.swift; sourceTree = "<group>"; };
 		E95DB2CB6E010CE238BC1A39 /* Tik.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Tik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC8D6ECE43E71097C67C309 /* Tik.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tik.entitlements; sourceTree = "<group>"; };
+		ECEA13AD7A05E8CFF40A0EEE /* CardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRow.swift; sourceTree = "<group>"; };
+		F2E8E3307E8DC0745CF8F520 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -86,6 +114,18 @@
 			path = Logic;
 			sourceTree = "<group>";
 		};
+		3CE26015682C10EC1F4B8589 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1C26A3DD94E0909CDC835600 /* AppBackground.swift */,
+				ECEA13AD7A05E8CFF40A0EEE /* CardRow.swift */,
+				99287CDB35B3893C287A6B9C /* CheckCircle.swift */,
+				6988DF38B75C5541A28250BD /* TaskActionsModifier.swift */,
+				9C09D07A4F6B0DB6F655AF15 /* TaskRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		3F1C104CF1BDB75AE78F1C5C /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +133,31 @@
 				1EA5AD5F10FD8A825AF58295 /* Preferences.swift */,
 			);
 			path = Preferences;
+			sourceTree = "<group>";
+		};
+		42BA1302A5204727C695AD5E /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				4D2118FB27F6358DB8C73626 /* Typography.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		43B5095072D68A1F5FF1D56F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3CE26015682C10EC1F4B8589 /* Components */,
+				8D433F98EF00CF0825506BF8 /* Today */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		515766327E08506B631B62E1 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				9B3BE30D3A57438C19E4DED3 /* DemoData.swift */,
+			);
+			path = Debug;
 			sourceTree = "<group>";
 		};
 		577E0EDF4B855A843A93BD2B /* Localization */ = {
@@ -107,11 +172,24 @@
 			isa = PBXGroup;
 			children = (
 				CE8550AB112EC001B551C9C2 /* App */,
+				515766327E08506B631B62E1 /* Debug */,
 				075A3D58E62A6FEAFE1A2535 /* Resources */,
+				43B5095072D68A1F5FF1D56F /* Views */,
 				C9A06435EFF6097F94E37735 /* Info.plist */,
 				EAC8D6ECE43E71097C67C309 /* Tik.entitlements */,
 			);
 			path = Tik;
+			sourceTree = "<group>";
+		};
+		8D433F98EF00CF0825506BF8 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				39A663F9D68429C99E136CB2 /* ProgressCard.swift */,
+				699939A7DD19A0723AA7FBBB /* TodayEmptyState.swift */,
+				B842454951998D6ED4536B25 /* TodayHeader.swift */,
+				F2E8E3307E8DC0745CF8F520 /* TodayView.swift */,
+			);
+			path = Today;
 			sourceTree = "<group>";
 		};
 		96D2F39289F1030D76F73447 /* Formatting */ = {
@@ -137,6 +215,9 @@
 		CE8550AB112EC001B551C9C2 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				2CBBA84D66E6F7A974BB4301 /* AppModel.swift */,
+				3837775F5BE03483FDD3C55E /* AppRoot.swift */,
+				DA72DF0478830FC0A55EC475 /* RootView.swift */,
 				931B452F7633705F8646B76C /* TikApp.swift */,
 			);
 			path = App;
@@ -145,6 +226,7 @@
 		E4F1C75728C6EAB39D4E2C54 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				42BA1302A5204727C695AD5E /* Design */,
 				96D2F39289F1030D76F73447 /* Formatting */,
 				577E0EDF4B855A843A93BD2B /* Localization */,
 				15DD028C9DF611C7C88601AB /* Logic */,
@@ -226,19 +308,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21E8301D9BBB90FE24F6ECCD /* AppBackground.swift in Sources */,
+				E3E93DDC303F6D0776B0C93B /* AppModel.swift in Sources */,
+				C4A43EFB6754E9732A0653FB /* AppRoot.swift in Sources */,
+				1D7AB17AE269DA2ECD238EAE /* CardRow.swift in Sources */,
+				B88FC7D692350172C57D17BF /* CheckCircle.swift in Sources */,
 				2EA0DC6381CAC5983010E3F0 /* DateFormatting.swift in Sources */,
+				7D02D56882021B42D2D6C302 /* DemoData.swift in Sources */,
 				CA826DC355801C78C272B11F /* EnvironmentValues+Tik.swift in Sources */,
 				FB6A0224AB5581F1D7A62545 /* L10n.swift in Sources */,
 				01580527AE36624447B083E8 /* Preferences.swift in Sources */,
 				036409842E0FE72CE25D1A9C /* Priority.swift in Sources */,
+				213633BBC2C332B5D7B10AE8 /* ProgressCard.swift in Sources */,
 				1CEEA2868EB379259B2B6E80 /* RepeatRule.swift in Sources */,
+				03F20F5737511A948FB7640F /* RootView.swift in Sources */,
 				1C1E4AFA22F7B68E2C27F3E0 /* SharedStore.swift in Sources */,
 				41F3A349CDFBFF24F6BCE37E /* Subtask.swift in Sources */,
 				C2A716B44BE878991D8D38A4 /* TaskActions.swift in Sources */,
+				58A1A05FBA253B85F0ABA2CC /* TaskActionsModifier.swift in Sources */,
 				A46A98221DE5542BCA78926A /* TaskFilter.swift in Sources */,
 				0B4E07170EDF50C552328DE3 /* TaskItem.swift in Sources */,
 				8DD6751702C9BC6E2AC6B75B /* TaskList.swift in Sources */,
+				EF79B16B003A5DCB9F82C37C /* TaskRow.swift in Sources */,
 				556800889D763EF36190501D /* TikApp.swift in Sources */,
+				9392FADE7510E60495B1A24D /* TodayEmptyState.swift in Sources */,
+				365F807A28A4358C3663E1A9 /* TodayHeader.swift in Sources */,
+				53BD76670F1305FB0C7D25BB /* TodayView.swift in Sources */,
+				BAC7613DD760B90B37EB7CC1 /* Typography.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,6 +22,10 @@ final class TaskItem {
     @Attribute(.externalStorage)
     var photoData: Data?
 
+    /// Kept next to `photoData` so lists can show a photo icon without
+    /// loading the photo itself.
+    var hasPhoto: Bool = false
+
     /// Set on the copy that is made when a repeating task is ticked, so the copy
     /// can be removed again if the tick is undone.
     var previousOccurrenceID: UUID?

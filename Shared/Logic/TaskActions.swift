@@ -40,6 +40,7 @@ enum TaskActions {
         next.note = task.note
         next.repeatRuleJSON = task.repeatRuleJSON
         next.photoData = task.photoData
+        next.hasPhoto = task.hasPhoto
         next.previousOccurrenceID = task.id
         context.insert(next)
         next.list = task.list
@@ -84,6 +85,7 @@ enum TaskActions {
         copy.note = task.note
         copy.repeatRuleJSON = task.repeatRuleJSON
         copy.photoData = task.photoData
+        copy.hasPhoto = task.hasPhoto
         context.insert(copy)
         copy.list = task.list
 

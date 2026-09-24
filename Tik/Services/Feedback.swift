@@ -36,8 +36,11 @@ enum Feedback {
 }
 
 /// Plays the two short sounds made by Scripts/make-sounds.py.
-@MainActor
-final class SoundPlayer {
+///
+/// Everything that touches audio runs on one background queue: it talks to
+/// the audio system, which can briefly block, and the main thread should
+/// never wait for a sound. The players are only used on that queue.
+final class SoundPlayer: @unchecked Sendable {
     enum Sound: String, CaseIterable {
         case tick
         case celebrate
@@ -45,24 +48,34 @@ final class SoundPlayer {
 
     static let shared = SoundPlayer()
 
+    private let queue = DispatchQueue(label: "com.mahyarmozafar.tik.sounds", qos: .userInitiated)
     private var players: [Sound: AVAudioPlayer] = [:]
 
-    private init() {
-        // Mix with music, and stay quiet when the phone is on silent.
-        try? AVAudioSession.sharedInstance().setCategory(.ambient, options: [.mixWithOthers])
+    private init() {}
 
-        for sound in Sound.allCases {
-            guard let url = Bundle.main.url(forResource: sound.rawValue, withExtension: "wav"),
-                  let player = try? AVAudioPlayer(contentsOf: url) else { continue }
-            player.volume = sound == .tick ? 0.6 : 0.75
-            player.prepareToPlay()
-            players[sound] = player
+    /// Loads the sounds. Called once at launch.
+    func prepare() {
+        queue.async { [self] in
+            // Mix with music, and stay quiet when the phone is on silent.
+            let session = AVAudioSession.sharedInstance()
+            try? session.setCategory(.ambient, options: [.mixWithOthers])
+            try? session.setActive(true)
+
+            for sound in Sound.allCases {
+                guard let url = Bundle.main.url(forResource: sound.rawValue, withExtension: "wav"),
+                      let player = try? AVAudioPlayer(contentsOf: url) else { continue }
+                player.volume = sound == .tick ? 0.6 : 0.75
+                player.prepareToPlay()
+                players[sound] = player
+            }
         }
     }
 
     func play(_ sound: Sound) {
-        guard let player = players[sound] else { return }
-        player.currentTime = 0
-        player.play()
+        queue.async { [self] in
+            guard let player = players[sound] else { return }
+            player.currentTime = 0
+            player.play()
+        }
     }
 }

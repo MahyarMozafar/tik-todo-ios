@@ -32,6 +32,10 @@ final class AppModel {
     /// quick add field and clears this.
     var pendingQuickAdd = false
 
+    /// Whether the Settings sheet is open. It lives here, above the screens,
+    /// so it stays open while the screens are rebuilt for a new language.
+    var showSettings = false
+
     /// Goes up by one each time the last open task of today is ticked.
     private(set) var celebrations = 0
 

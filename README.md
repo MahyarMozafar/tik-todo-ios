@@ -73,7 +73,7 @@
 | Widgets | WidgetKit, with an App Intent for ticking tasks on the widget |
 | Reminders | UserNotifications with actions and the app badge |
 | Languages | A String Catalog with English and Farsi, switched from inside the app through the `locale` and `layoutDirection` environment values |
-| Tests | 35 unit tests with Swift Testing, 17 UI tests with XCTest |
+| Tests | 35 unit tests with Swift Testing, 18 UI tests with XCTest |
 | Project | Generated from `project.yml` with [XcodeGen](https://github.com/yonaskolb/XcodeGen) |
 
 The app icons are drawn in code by `Scripts/make-icons.swift`, and the two sounds are made from math by `Scripts/make-sounds.py`.

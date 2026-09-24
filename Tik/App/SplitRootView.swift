@@ -12,7 +12,6 @@ struct SplitRootView: View {
 
     @State private var selection: SidebarItem? = .today
     @State private var query = ""
-    @State private var showSettings = false
     @State private var editingList: ListEditorRequest?
 
     enum SidebarItem: Hashable {
@@ -53,7 +52,7 @@ struct SplitRootView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Button {
-                        showSettings = true
+                        model.showSettings = true
                     } label: {
                         Label("Settings", systemImage: "gearshape")
                     }
@@ -70,9 +69,6 @@ struct SplitRootView: View {
             NavigationStack {
                 detail
             }
-        }
-        .sheet(isPresented: $showSettings) {
-            SettingsView()
         }
         .sheet(item: $editingList) { request in
             ListEditorView(request: request)

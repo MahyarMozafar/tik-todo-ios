@@ -56,35 +56,37 @@ struct SettingsView: View {
                         .accessibilityIdentifier("closeSettings")
                 }
             }
-            .task {
-                notificationsDenied = await Reminders.isDenied()
-            }
-            .onChange(of: scenePhase) { _, phase in
-                guard phase == .active else { return }
-                Task { notificationsDenied = await Reminders.isDenied() }
-            }
-            .onChange(of: reminderOffset) {
-                model.refreshReminders()
-            }
-            .onChange(of: badge) { _, isOn in
-                Task {
-                    if isOn {
-                        await Reminders.requestPermission()
-                    }
-                    model.updateBadge()
-                }
-            }
-            .onChange(of: language) { WidgetCenter.shared.reloadAllTimelines() }
-            .onChange(of: calendarKind) { WidgetCenter.shared.reloadAllTimelines() }
-            .onChange(of: accent) { WidgetCenter.shared.reloadAllTimelines() }
         }
+        // Build the screen again in the new language, title bar included.
+        .id(language)
+        .task {
+            notificationsDenied = await Reminders.isDenied()
+        }
+        .onChange(of: scenePhase) { _, phase in
+            guard phase == .active else { return }
+            Task { notificationsDenied = await Reminders.isDenied() }
+        }
+        .onChange(of: reminderOffset) {
+            model.refreshReminders()
+        }
+        .onChange(of: badge) { _, isOn in
+            Task {
+                if isOn {
+                    await Reminders.requestPermission()
+                }
+                model.updateBadge()
+            }
+        }
+        .onChange(of: language) { WidgetCenter.shared.reloadAllTimelines() }
+        .onChange(of: calendarKind) { WidgetCenter.shared.reloadAllTimelines() }
+        .onChange(of: accent) { WidgetCenter.shared.reloadAllTimelines() }
     }
 
     // MARK: - Sections
 
     private var languageSection: some View {
         Section("Language & Calendar") {
-            Picker(selection: $language) {
+            Picker(selection: languageSelection) {
                 ForEach(AppLanguage.allCases) { language in
                     Text(verbatim: language.nativeName).tag(language)
                 }
@@ -239,6 +241,18 @@ struct SettingsView: View {
         } footer: {
             Text("Made by Mahyar Mozafar.")
         }
+    }
+
+    /// Sets the navigation bar font first: UIKit draws those titles, and the
+    /// screens are rebuilt right after the language changes.
+    private var languageSelection: Binding<AppLanguage> {
+        Binding(
+            get: { language },
+            set: { newLanguage in
+                Vazirmatn.applyToNavigationBars(for: newLanguage)
+                language = newLanguage
+            }
+        )
     }
 
     private var appVersion: String {

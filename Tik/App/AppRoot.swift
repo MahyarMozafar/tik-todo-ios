@@ -13,10 +13,18 @@ struct AppRoot: View {
     @AppStorage(PrefKey.accent, store: .tik) private var accent: AccentChoice = .blue
 
     var body: some View {
+        @Bindable var model = model
         let formatting = DateFormatting(language: language, calendarKind: calendarKind, use24Hour: use24Hour)
 
         RootView()
-            .id(model.contextID)
+            // Build the screens again when the language changes. Lists that
+            // only flip their direction in place can end up drawing mirrored
+            // text after going from Farsi back to English.
+            .id(RootIdentity(language: language, context: model.contextID))
+            // Outside the rebuilt part, so Settings stays open meanwhile.
+            .sheet(isPresented: $model.showSettings) {
+                SettingsView()
+            }
             .environment(\.modelContext, model.context)
             .environment(\.appLanguage, language)
             .environment(\.dateFormatting, formatting)
@@ -39,7 +47,6 @@ struct AppRoot: View {
                 // Reminder buttons and texts follow the app's language.
                 Reminders.registerActions(language: newLanguage)
                 model.refreshReminders()
-                Vazirmatn.applyToNavigationBars(for: newLanguage)
                 // The few words iOS draws itself (like "Cancel" in search)
                 // follow this after the next launch.
                 UserDefaults.standard.set([newLanguage.rawValue], forKey: "AppleLanguages")
@@ -48,4 +55,10 @@ struct AppRoot: View {
                 model.refreshReminders()
             }
     }
+}
+
+/// Changes whenever the screens have to be built from scratch.
+private struct RootIdentity: Hashable {
+    var language: AppLanguage
+    var context: UUID
 }

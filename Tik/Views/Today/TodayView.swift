@@ -18,7 +18,6 @@ struct TodayView: View {
     @State private var now = Date.now
     @State private var isAdding = false
     @State private var editing: EditorRequest?
-    @State private var showSettings = false
 
     var body: some View {
         let todays = TaskFilter.today(datedTasks, now: now, calendar: calendar, order: sortOrder)
@@ -49,7 +48,7 @@ struct TodayView: View {
         .scrollDismissesKeyboard(.interactively)
         .safeAreaBar(edge: .top) {
             TodayHeader(date: now) {
-                showSettings = true
+                model.showSettings = true
             }
         }
         .safeAreaBar(edge: .bottom) {
@@ -69,9 +68,6 @@ struct TodayView: View {
         .toolbar(.hidden, for: .navigationBar)
         .sheet(item: $editing) { request in
             TaskEditorView(request: request)
-        }
-        .sheet(isPresented: $showSettings) {
-            SettingsView()
         }
         .onReceive(NotificationCenter.default.publisher(for: .NSCalendarDayChanged)) { _ in
             now = .now

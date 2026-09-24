@@ -44,6 +44,17 @@
             parallelizable = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A41B88680B0B6D0CD01591A1"
+               BuildableName = "TikTests.xctest"
+               BlueprintName = "TikTests"
+               ReferencedContainer = "container:Tik.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "28E84DEEE2D53AC56B95AA2C"
                BuildableName = "TikUITests.xctest"
                BlueprintName = "TikUITests"

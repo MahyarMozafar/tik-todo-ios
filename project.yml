@@ -68,6 +68,7 @@ targets:
           - group.com.mahyarmozafar.tik
     scheme:
       testTargets:
+        - TikTests
         - TikUITests
 
   TikWidget:
@@ -98,6 +99,18 @@ targets:
       properties:
         com.apple.security.application-groups:
           - group.com.mahyarmozafar.tik
+
+  TikTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: TikTests
+    dependencies:
+      - target: Tik
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.mahyarmozafar.tik.tests
+        GENERATE_INFOPLIST_FILE: YES
 
   TikUITests:
     type: bundle.ui-testing

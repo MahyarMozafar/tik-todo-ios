@@ -16,6 +16,7 @@ struct TodayView: View {
     @AppStorage(PrefKey.showCompletedInToday, store: .tik) private var showCompleted = true
 
     @State private var now = Date.now
+    @State private var isAdding = false
 
     var body: some View {
         let todays = TaskFilter.today(datedTasks, now: now, calendar: calendar, order: sortOrder)
@@ -48,6 +49,13 @@ struct TodayView: View {
         .safeAreaBar(edge: .top) {
             TodayHeader(date: now) {}
         }
+        .safeAreaBar(edge: .bottom) {
+            QuickAddBar(isExpanded: $isAdding) { title in
+                withAnimation(.snappy) {
+                    _ = model.addTask(title: title, dueDate: calendar.startOfDay(for: .now))
+                }
+            }
+        }
         .toolbar(.hidden, for: .navigationBar)
         .onReceive(NotificationCenter.default.publisher(for: .NSCalendarDayChanged)) { _ in
             now = .now
@@ -56,6 +64,9 @@ struct TodayView: View {
             if phase == .active {
                 now = .now
             }
+        }
+        .onChange(of: model.quickAddRequests) {
+            isAdding = true
         }
     }
 }

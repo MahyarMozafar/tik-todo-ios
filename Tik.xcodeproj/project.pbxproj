@@ -19,6 +19,7 @@
 		2EA0DC6381CAC5983010E3F0 /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DB99D554B53D44BC7EEDD /* DateFormatting.swift */; };
 		365F807A28A4358C3663E1A9 /* TodayHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B842454951998D6ED4536B25 /* TodayHeader.swift */; };
 		41F3A349CDFBFF24F6BCE37E /* Subtask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A402D2DE91E8D8F3E91F0699 /* Subtask.swift */; };
+		42C375B3CABF77EFC0FCAE30 /* RepeatPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165793DBA13C598AAEB00F45 /* RepeatPickerView.swift */; };
 		470DDA1D474497D22BCB0662 /* QuickAddBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB555A185C7E187D3E26D /* QuickAddBar.swift */; };
 		53BD76670F1305FB0C7D25BB /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E8E3307E8DC0745CF8F520 /* TodayView.swift */; };
 		556800889D763EF36190501D /* TikApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931B452F7633705F8646B76C /* TikApp.swift */; };
@@ -62,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		06558992952DFD50B335220D /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
+		165793DBA13C598AAEB00F45 /* RepeatPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatPickerView.swift; sourceTree = "<group>"; };
 		1A809E0746F8A0AEFAFB3032 /* ListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsView.swift; sourceTree = "<group>"; };
 		1C26A3DD94E0909CDC835600 /* AppBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackground.swift; sourceTree = "<group>"; };
 		1D54C92D25C63C21E91F0287 /* TikUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -277,6 +279,7 @@
 			children = (
 				E19509BBAC41B61BE71E95D7 /* EditorRequest.swift */,
 				E7BC44B8EF845C530AE2F728 /* PhotoViewer.swift */,
+				165793DBA13C598AAEB00F45 /* RepeatPickerView.swift */,
 				74B7E9BA1F392C7D70A9DBF2 /* TaskDraft.swift */,
 				52C26C1209582DCC38114CA5 /* TaskEditorView.swift */,
 			);
@@ -435,6 +438,7 @@
 				036409842E0FE72CE25D1A9C /* Priority.swift in Sources */,
 				213633BBC2C332B5D7B10AE8 /* ProgressCard.swift in Sources */,
 				470DDA1D474497D22BCB0662 /* QuickAddBar.swift in Sources */,
+				42C375B3CABF77EFC0FCAE30 /* RepeatPickerView.swift in Sources */,
 				1CEEA2868EB379259B2B6E80 /* RepeatRule.swift in Sources */,
 				03F20F5737511A948FB7640F /* RootView.swift in Sources */,
 				1C1E4AFA22F7B68E2C27F3E0 /* SharedStore.swift in Sources */,

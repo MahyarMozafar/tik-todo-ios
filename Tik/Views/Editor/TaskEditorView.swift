@@ -10,12 +10,14 @@ struct TaskEditorView: View {
     @Environment(AppModel.self) private var model
     @Environment(\.dismiss) private var dismiss
     @Environment(\.calendar) private var calendar
+    @Environment(\.dateFormatting) private var formatting
 
     @Query(sort: \TaskList.sortIndex) private var lists: [TaskList]
 
     @AppStorage(PrefKey.fieldNotes, store: .tik) private var notesEnabled = true
     @AppStorage(PrefKey.fieldSubtasks, store: .tik) private var subtasksEnabled = true
     @AppStorage(PrefKey.fieldDates, store: .tik) private var datesEnabled = true
+    @AppStorage(PrefKey.fieldRepeat, store: .tik) private var repeatEnabled = true
     @AppStorage(PrefKey.fieldPriority, store: .tik) private var priorityEnabled = true
     @AppStorage(PrefKey.fieldPhotos, store: .tik) private var photosEnabled = true
 
@@ -139,6 +141,18 @@ struct TaskEditorView: View {
 
                 if draft.hasTime {
                     DatePicker("Time", selection: $draft.time, displayedComponents: .hourAndMinute)
+                }
+
+                if repeatEnabled {
+                    NavigationLink {
+                        RepeatPickerView(rule: $draft.repeatRule, day: draft.day)
+                    } label: {
+                        LabeledContent {
+                            Text(draft.repeatRule?.summary(formatting: formatting) ?? L10n.string("Never", formatting.language))
+                        } label: {
+                            Label("Repeat", systemImage: "repeat")
+                        }
+                    }
                 }
             }
         }

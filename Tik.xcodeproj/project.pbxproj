@@ -7,13 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01580527AE36624447B083E8 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA5AD5F10FD8A825AF58295 /* Preferences.swift */; };
+		036409842E0FE72CE25D1A9C /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = C038E54A755F51C0C080F320 /* Priority.swift */; };
+		0B4E07170EDF50C552328DE3 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528ED7FFF663B587801C96B4 /* TaskItem.swift */; };
+		1C1E4AFA22F7B68E2C27F3E0 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06558992952DFD50B335220D /* SharedStore.swift */; };
+		1CEEA2868EB379259B2B6E80 /* RepeatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8410A2F462F35412E6FDA3B /* RepeatRule.swift */; };
+		2EA0DC6381CAC5983010E3F0 /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DB99D554B53D44BC7EEDD /* DateFormatting.swift */; };
+		41F3A349CDFBFF24F6BCE37E /* Subtask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A402D2DE91E8D8F3E91F0699 /* Subtask.swift */; };
 		556800889D763EF36190501D /* TikApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931B452F7633705F8646B76C /* TikApp.swift */; };
 		893B39461026D5EF1228B758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719B8F002CD778015BA32C32 /* Assets.xcassets */; };
+		8DD6751702C9BC6E2AC6B75B /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6801D7912079A8311052E7BE /* TaskList.swift */; };
+		CA826DC355801C78C272B11F /* EnvironmentValues+Tik.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D31A4DC564A7C627D5C93 /* EnvironmentValues+Tik.swift */; };
+		FB6A0224AB5581F1D7A62545 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = A020D9BDD69F2A4B09F8B46A /* L10n.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06558992952DFD50B335220D /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
+		1EA5AD5F10FD8A825AF58295 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		223DB99D554B53D44BC7EEDD /* DateFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatting.swift; sourceTree = "<group>"; };
+		528ED7FFF663B587801C96B4 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		6801D7912079A8311052E7BE /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		6C1D31A4DC564A7C627D5C93 /* EnvironmentValues+Tik.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Tik.swift"; sourceTree = "<group>"; };
 		719B8F002CD778015BA32C32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		931B452F7633705F8646B76C /* TikApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikApp.swift; sourceTree = "<group>"; };
+		A020D9BDD69F2A4B09F8B46A /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		A402D2DE91E8D8F3E91F0699 /* Subtask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subtask.swift; sourceTree = "<group>"; };
+		B8410A2F462F35412E6FDA3B /* RepeatRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatRule.swift; sourceTree = "<group>"; };
+		C038E54A755F51C0C080F320 /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
 		C9A06435EFF6097F94E37735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E95DB2CB6E010CE238BC1A39 /* Tik.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Tik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC8D6ECE43E71097C67C309 /* Tik.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tik.entitlements; sourceTree = "<group>"; };
@@ -45,6 +65,31 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		10A668AF8D101DE44515E7DE /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				06558992952DFD50B335220D /* SharedStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		3F1C104CF1BDB75AE78F1C5C /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				6C1D31A4DC564A7C627D5C93 /* EnvironmentValues+Tik.swift */,
+				1EA5AD5F10FD8A825AF58295 /* Preferences.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		577E0EDF4B855A843A93BD2B /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				A020D9BDD69F2A4B09F8B46A /* L10n.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		5D8F56FAC1DA3B210674C72E /* Tik */ = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +99,26 @@
 				EAC8D6ECE43E71097C67C309 /* Tik.entitlements */,
 			);
 			path = Tik;
+			sourceTree = "<group>";
+		};
+		96D2F39289F1030D76F73447 /* Formatting */ = {
+			isa = PBXGroup;
+			children = (
+				223DB99D554B53D44BC7EEDD /* DateFormatting.swift */,
+			);
+			path = Formatting;
+			sourceTree = "<group>";
+		};
+		A814EAB6750319004ACE3898 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C038E54A755F51C0C080F320 /* Priority.swift */,
+				B8410A2F462F35412E6FDA3B /* RepeatRule.swift */,
+				A402D2DE91E8D8F3E91F0699 /* Subtask.swift */,
+				528ED7FFF663B587801C96B4 /* TaskItem.swift */,
+				6801D7912079A8311052E7BE /* TaskList.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		CE8550AB112EC001B551C9C2 /* App */ = {
@@ -67,6 +132,11 @@
 		E4F1C75728C6EAB39D4E2C54 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				96D2F39289F1030D76F73447 /* Formatting */,
+				577E0EDF4B855A843A93BD2B /* Localization */,
+				A814EAB6750319004ACE3898 /* Models */,
+				3F1C104CF1BDB75AE78F1C5C /* Preferences */,
+				10A668AF8D101DE44515E7DE /* Store */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -142,6 +212,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EA0DC6381CAC5983010E3F0 /* DateFormatting.swift in Sources */,
+				CA826DC355801C78C272B11F /* EnvironmentValues+Tik.swift in Sources */,
+				FB6A0224AB5581F1D7A62545 /* L10n.swift in Sources */,
+				01580527AE36624447B083E8 /* Preferences.swift in Sources */,
+				036409842E0FE72CE25D1A9C /* Priority.swift in Sources */,
+				1CEEA2868EB379259B2B6E80 /* RepeatRule.swift in Sources */,
+				1C1E4AFA22F7B68E2C27F3E0 /* SharedStore.swift in Sources */,
+				41F3A349CDFBFF24F6BCE37E /* Subtask.swift in Sources */,
+				0B4E07170EDF50C552328DE3 /* TaskItem.swift in Sources */,
+				8DD6751702C9BC6E2AC6B75B /* TaskList.swift in Sources */,
 				556800889D763EF36190501D /* TikApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

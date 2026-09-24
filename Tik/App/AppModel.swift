@@ -28,9 +28,9 @@ final class AppModel {
 
     var selectedTab: AppTab = .today
 
-    /// Goes up by one when something outside a screen (like the widget's
-    /// + button) asks to add a task.
-    var quickAddRequests = 0
+    /// Set when the widget's + button opens the app. Today then opens its
+    /// quick add field and clears this.
+    var pendingQuickAdd = false
 
     /// Goes up by one each time the last open task of today is ticked.
     private(set) var celebrations = 0
@@ -193,6 +193,17 @@ final class AppModel {
             list.sortIndex = index
         }
         save()
+    }
+
+    // MARK: - Links
+
+    /// Links from the widget: tik://today and tik://new.
+    func handle(_ url: URL) {
+        guard url.scheme == "tik" else { return }
+        selectedTab = .today
+        if url.host() == "new" {
+            pendingQuickAdd = true
+        }
     }
 
     // MARK: - Reminders

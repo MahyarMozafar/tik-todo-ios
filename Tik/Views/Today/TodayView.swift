@@ -47,10 +47,6 @@ struct TodayView: View {
         .listStyle(.plain)
         .scrollContentBackground(.hidden)
         .scrollDismissesKeyboard(.interactively)
-        .background { AppBackground() }
-        .overlay {
-            ConfettiView(trigger: model.celebrations)
-        }
         .safeAreaBar(edge: .top) {
             TodayHeader(date: now) {
                 showSettings = true
@@ -64,6 +60,10 @@ struct TodayView: View {
             } onShowDetails: { title in
                 editing = .new(title: title, dueDate: calendar.startOfDay(for: .now))
             }
+        }
+        .background { AppBackground() }
+        .overlay {
+            ConfettiView(trigger: model.celebrations)
         }
         .toolbar(.hidden, for: .navigationBar)
         .sheet(item: $editing) { request in
@@ -80,7 +80,9 @@ struct TodayView: View {
                 now = .now
             }
         }
-        .onChange(of: model.quickAddRequests) {
+        .onChange(of: model.pendingQuickAdd, initial: true) { _, pending in
+            guard pending else { return }
+            model.pendingQuickAdd = false
             isAdding = true
         }
     }

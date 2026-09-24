@@ -34,23 +34,3 @@ struct ProgressCard: View {
         .accessibilityElement(children: .combine)
     }
 }
-
-struct ProgressBar: View {
-    var value: Double
-    @Environment(\.accent) private var accent
-
-    var body: some View {
-        GeometryReader { proxy in
-            ZStack(alignment: .leading) {
-                Capsule()
-                    .fill(.primary.opacity(0.08))
-                Capsule()
-                    .fill(LinearGradient(colors: [accent.partner.opacity(0.8), accent.color],
-                                         startPoint: .leading, endPoint: .trailing))
-                    .frame(width: value > 0 ? max(10, proxy.size.width * value) : 0)
-            }
-        }
-        .frame(height: 10)
-        .animation(.spring(response: 0.5, dampingFraction: 0.8), value: value)
-    }
-}

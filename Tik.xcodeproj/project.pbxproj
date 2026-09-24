@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		008011C32E8B1EFCBC7A9D5C /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528ED7FFF663B587801C96B4 /* TaskItem.swift */; };
 		01580527AE36624447B083E8 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA5AD5F10FD8A825AF58295 /* Preferences.swift */; };
 		036409842E0FE72CE25D1A9C /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = C038E54A755F51C0C080F320 /* Priority.swift */; };
 		038E9DA791FD650AEA9E7902 /* ScreenshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659CA8367C2C589841F2EAE2 /* ScreenshotTests.swift */; };
@@ -21,57 +22,94 @@
 		213633BBC2C332B5D7B10AE8 /* ProgressCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A663F9D68429C99E136CB2 /* ProgressCard.swift */; };
 		21A165345321AF7E31FEE730 /* Vazirmatn-OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7A664BB503C617B14AA71B5C /* Vazirmatn-OFL.txt */; };
 		21E8301D9BBB90FE24F6ECCD /* AppBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C26A3DD94E0909CDC835600 /* AppBackground.swift */; };
+		22731F80DCC6621A1D9E8CCA /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DB99D554B53D44BC7EEDD /* DateFormatting.swift */; };
+		26AE6F1A95FEDAF84414BB72 /* EnvironmentValues+Tik.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D31A4DC564A7C627D5C93 /* EnvironmentValues+Tik.swift */; };
 		295957190904BCF011DFB0A5 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A6F15FFC3385CF3FA55A2310 /* Localizable.xcstrings */; };
+		2D1CA7C276CD68828D071B72 /* RepeatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8410A2F462F35412E6FDA3B /* RepeatRule.swift */; };
 		2D3195DC9F77630A01F7E4FF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D4B0492A0E200BEABC3D14 /* SettingsView.swift */; };
+		2DBB458C693863E1C21340DA /* TodayWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11A3ECCDB7C76A24C2D82C6 /* TodayWidgetView.swift */; };
 		2EA0DC6381CAC5983010E3F0 /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DB99D554B53D44BC7EEDD /* DateFormatting.swift */; };
+		2F8A765E66BDF6FA7E458A52 /* Vazirmatn-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF1491EBD55E3E076ECF2535 /* Vazirmatn-Regular.ttf */; };
+		346FADBC540E7E4A1008221D /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2118FB27F6358DB8C73626 /* Typography.swift */; };
+		359E175ECCAB4DEF2E32EFA4 /* Vazirmatn-OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7A664BB503C617B14AA71B5C /* Vazirmatn-OFL.txt */; };
 		365F807A28A4358C3663E1A9 /* TodayHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B842454951998D6ED4536B25 /* TodayHeader.swift */; };
+		41C3DBF836C160821B7B21D9 /* TodayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538EE397499CCCEF8AD51388 /* TodayWidget.swift */; };
 		41F3A349CDFBFF24F6BCE37E /* Subtask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A402D2DE91E8D8F3E91F0699 /* Subtask.swift */; };
 		42C375B3CABF77EFC0FCAE30 /* RepeatPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165793DBA13C598AAEB00F45 /* RepeatPickerView.swift */; };
 		470DDA1D474497D22BCB0662 /* QuickAddBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB555A185C7E187D3E26D /* QuickAddBar.swift */; };
+		4F012E2CDA6322BB7E839EFF /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9451CAE510736B00D6C71 /* ProgressBar.swift */; };
 		53BD76670F1305FB0C7D25BB /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E8E3307E8DC0745CF8F520 /* TodayView.swift */; };
 		556800889D763EF36190501D /* TikApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931B452F7633705F8646B76C /* TikApp.swift */; };
 		58A1A05FBA253B85F0ABA2CC /* TaskActionsModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6988DF38B75C5541A28250BD /* TaskActionsModifier.swift */; };
 		5A2B08F0639D1AAF5A45E8D8 /* Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C28F8E6A3A99086C7F5B84 /* Reminders.swift */; };
 		6369AD59519628812F670B36 /* Vazirmatn-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA24ACB77B18B5545579E70B /* Vazirmatn-Bold.ttf */; };
+		64DFD946146BE99ED582A12F /* Vazirmatn-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA24ACB77B18B5545579E70B /* Vazirmatn-Bold.ttf */; };
+		670CCF1B6873E3A2969B64CA /* Subtask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A402D2DE91E8D8F3E91F0699 /* Subtask.swift */; };
 		6A4665B5F8109AF43ED1AB90 /* EditorRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19509BBAC41B61BE71E95D7 /* EditorRequest.swift */; };
 		6B2697667C23C491F3052005 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFE2490E683AA7575A0B05 /* ConfettiView.swift */; };
 		7467704DE61A7D4CDDC4D3FA /* PhotoViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BC44B8EF845C530AE2F728 /* PhotoViewer.swift */; };
+		78A54E1895D2D991461BA5F9 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = A020D9BDD69F2A4B09F8B46A /* L10n.swift */; };
 		7D02D56882021B42D2D6C302 /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3BE30D3A57438C19E4DED3 /* DemoData.swift */; };
+		82CB06F6E88E18F595F96F19 /* WidgetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFADE6B0155D77219D42627 /* WidgetData.swift */; };
+		82E36E6BF74E7865E39E2722 /* TaskQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5041F2BAB22A50CBD7535C26 /* TaskQueries.swift */; };
+		82E5DE264F8D4869D24F1BD3 /* TaskFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167DB3F2F4CBA025C2AC39D /* TaskFilter.swift */; };
 		83E71C2E21D1D24B2ACA814C /* ListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BC9B81EE00E8EEAEA40248 /* ListDetailView.swift */; };
+		8539704333B7A9DF4E9D11D8 /* WidgetActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990667E0479BE0A9B1A0BB3 /* WidgetActions.swift */; };
 		853E801A57DCE5C4A8B6F065 /* Vazirmatn-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF1491EBD55E3E076ECF2535 /* Vazirmatn-Regular.ttf */; };
 		893B39461026D5EF1228B758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719B8F002CD778015BA32C32 /* Assets.xcassets */; };
+		894F5EA65AD189ECEDA36268 /* Vazirmatn-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1216EA99D8AFAB0C0EBAC1F1 /* Vazirmatn-SemiBold.ttf */; };
 		8A8B14C54367F84BBBCE357A /* TaskQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5041F2BAB22A50CBD7535C26 /* TaskQueries.swift */; };
 		8C38466C3D784854E939224F /* EditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F589802E64FBF4CB4C78251 /* EditorTests.swift */; };
 		8DD6751702C9BC6E2AC6B75B /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6801D7912079A8311052E7BE /* TaskList.swift */; };
 		9392FADE7510E60495B1A24D /* TodayEmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699939A7DD19A0723AA7FBBB /* TodayEmptyState.swift */; };
 		957BC356695B3177CFDE99B5 /* TaskEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C26C1209582DCC38114CA5 /* TaskEditorView.swift */; };
+		958FFF68F8AC4601B13F309A /* TikWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9676C0F65B1433A8FD9E1C8D /* TikWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		97FBACDEF164F24C61860F98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BAAA6208190C380EEBEAC5 /* AppDelegate.swift */; };
+		9899C340E26D1B7F0DAAD52D /* Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C28F8E6A3A99086C7F5B84 /* Reminders.swift */; };
 		98B61A6252C366F61477340D /* ImageResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D4A994C47086512BDD3B0A /* ImageResizer.swift */; };
 		A46A98221DE5542BCA78926A /* TaskFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167DB3F2F4CBA025C2AC39D /* TaskFilter.swift */; };
 		A62C9B3A225767DCF0422992 /* ListSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8F61AA45DC452D0B52DBAD /* ListSelection.swift */; };
 		AC7396773B9BB0809D910050 /* ListsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA0F5B870ACAA8EC3A051C1 /* ListsTests.swift */; };
+		B46A5B47A8A346BCBCC80CEE /* WidgetActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990667E0479BE0A9B1A0BB3 /* WidgetActions.swift */; };
 		B88FC7D692350172C57D17BF /* CheckCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99287CDB35B3893C287A6B9C /* CheckCircle.swift */; };
+		B9E0F4E326662E35790CCA32 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06558992952DFD50B335220D /* SharedStore.swift */; };
+		BA0E17E81B77A07121879DE2 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA5AD5F10FD8A825AF58295 /* Preferences.swift */; };
+		BA469A57C789797E23E6EF73 /* Vazirmatn-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD6B098C22DB60CE832A3AD /* Vazirmatn-Medium.ttf */; };
 		BAC7613DD760B90B37EB7CC1 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2118FB27F6358DB8C73626 /* Typography.swift */; };
+		BD46DFBCF5BEA171B0022900 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9451CAE510736B00D6C71 /* ProgressBar.swift */; };
+		C132E263E3EB021C04EA8BE0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A6F15FFC3385CF3FA55A2310 /* Localizable.xcstrings */; };
 		C275317BEF3F46AF9E91D2C1 /* SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE59100414762F1FA5C355 /* SearchTests.swift */; };
 		C2A716B44BE878991D8D38A4 /* TaskActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A88B4DF01F8671EAB2E987D /* TaskActions.swift */; };
 		C4A43EFB6754E9732A0653FB /* AppRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3837775F5BE03483FDD3C55E /* AppRoot.swift */; };
+		C7AA1D648F0C60BC1FCF3780 /* ToggleTaskIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10526FD7A21DC5B7C12DA09 /* ToggleTaskIntent.swift */; };
 		CA4538375686E2496645360F /* TodayFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AFC07D898CDFBBE4DA89AF /* TodayFlowTests.swift */; };
 		CA826DC355801C78C272B11F /* EnvironmentValues+Tik.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D31A4DC564A7C627D5C93 /* EnvironmentValues+Tik.swift */; };
 		CC2F49CCC45A8FBDA5B21913 /* AppIconPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C4CB3211B3E79B6672BCA /* AppIconPicker.swift */; };
 		CCF2EEB4F35C40BF1580F969 /* Vazirmatn-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD6B098C22DB60CE832A3AD /* Vazirmatn-Medium.ttf */; };
 		DA6C74B6F8A2F1F0260D9E4B /* SettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF20207B008ED63FA60EE3DE /* SettingsTests.swift */; };
+		DC179AC7FE2EC726729D9FE6 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6801D7912079A8311052E7BE /* TaskList.swift */; };
+		DF06035A345C12E59B734EFB /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = C038E54A755F51C0C080F320 /* Priority.swift */; };
 		DFC99CBC3A79275898D6E9E5 /* TaskDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7E9BA1F392C7D70A9DBF2 /* TaskDraft.swift */; };
 		E309CEB8CB6D1DF88404E659 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A543154DC4F701571F2FFC97 /* SearchView.swift */; };
 		E3E93DDC303F6D0776B0C93B /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBA84D66E6F7A974BB4301 /* AppModel.swift */; };
+		E538EDD83D77F9B1E95826B6 /* WidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ADC2E51BD476BDB006FC3D /* WidgetTests.swift */; };
 		E6E89CAF3494E308B354A995 /* ListEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EF0298EA5EB987FD555B2 /* ListEditorView.swift */; };
 		EDDDD1F035D629EEF3973EDC /* tick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4113EDD839DD40D2D4A5C5C9 /* tick.wav */; };
 		EEBF43F75798F20E0ADAD7D2 /* ListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A809E0746F8A0AEFAFB3032 /* ListsView.swift */; };
 		EF79B16B003A5DCB9F82C37C /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C09D07A4F6B0DB6F655AF15 /* TaskRow.swift */; };
+		F6BA3A3E12E5625838541D2B /* TaskActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A88B4DF01F8671EAB2E987D /* TaskActions.swift */; };
 		FB6A0224AB5581F1D7A62545 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = A020D9BDD69F2A4B09F8B46A /* L10n.swift */; };
 		FEC8D5E64D91E60EF4647DFA /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABCFE038900798BC22F7B27 /* Feedback.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0DCFAA9C9B570C2BAF8993AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5FC24A52D6CBC94A78452F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B4278AC19DEAD5632767D41;
+			remoteInfo = TikWidget;
+		};
 		A0E44B5665D30F9A3511931D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E5FC24A52D6CBC94A78452F7 /* Project object */;
@@ -81,11 +119,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		49107452EAEAA2E382E09CE0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				958FFF68F8AC4601B13F309A /* TikWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0443F7F1BE4295648FCF1A3E /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		06558992952DFD50B335220D /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
+		07C9451CAE510736B00D6C71 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		0990667E0479BE0A9B1A0BB3 /* WidgetActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetActions.swift; sourceTree = "<group>"; };
+		0DFADE6B0155D77219D42627 /* WidgetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetData.swift; sourceTree = "<group>"; };
+		0E0651EF3AFC96C05EC4D601 /* TikWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TikWidget.entitlements; sourceTree = "<group>"; };
 		11D4B0492A0E200BEABC3D14 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		1216EA99D8AFAB0C0EBAC1F1 /* Vazirmatn-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vazirmatn-SemiBold.ttf"; sourceTree = "<group>"; };
+		15ADC2E51BD476BDB006FC3D /* WidgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTests.swift; sourceTree = "<group>"; };
 		165793DBA13C598AAEB00F45 /* RepeatPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatPickerView.swift; sourceTree = "<group>"; };
 		1A809E0746F8A0AEFAFB3032 /* ListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsView.swift; sourceTree = "<group>"; };
 		1C26A3DD94E0909CDC835600 /* AppBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackground.swift; sourceTree = "<group>"; };
@@ -104,6 +161,7 @@
 		5041F2BAB22A50CBD7535C26 /* TaskQueries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskQueries.swift; sourceTree = "<group>"; };
 		528ED7FFF663B587801C96B4 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 		52C26C1209582DCC38114CA5 /* TaskEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditorView.swift; sourceTree = "<group>"; };
+		538EE397499CCCEF8AD51388 /* TodayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWidget.swift; sourceTree = "<group>"; };
 		659CA8367C2C589841F2EAE2 /* ScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotTests.swift; sourceTree = "<group>"; };
 		6801D7912079A8311052E7BE /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		6988DF38B75C5541A28250BD /* TaskActionsModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskActionsModifier.swift; sourceTree = "<group>"; };
@@ -116,6 +174,7 @@
 		7A664BB503C617B14AA71B5C /* Vazirmatn-OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Vazirmatn-OFL.txt"; sourceTree = "<group>"; };
 		7A88B4DF01F8671EAB2E987D /* TaskActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskActions.swift; sourceTree = "<group>"; };
 		931B452F7633705F8646B76C /* TikApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikApp.swift; sourceTree = "<group>"; };
+		9676C0F65B1433A8FD9E1C8D /* TikWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = TikWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		986C4CB3211B3E79B6672BCA /* AppIconPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconPicker.swift; sourceTree = "<group>"; };
 		99287CDB35B3893C287A6B9C /* CheckCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckCircle.swift; sourceTree = "<group>"; };
 		9B3BE30D3A57438C19E4DED3 /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
@@ -136,7 +195,10 @@
 		C9A06435EFF6097F94E37735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CAA0F5B870ACAA8EC3A051C1 /* ListsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsTests.swift; sourceTree = "<group>"; };
 		CC7EB555A185C7E187D3E26D /* QuickAddBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAddBar.swift; sourceTree = "<group>"; };
+		D10526FD7A21DC5B7C12DA09 /* ToggleTaskIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleTaskIntent.swift; sourceTree = "<group>"; };
+		D872F0F35937452E6C91D012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DA72DF0478830FC0A55EC475 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		E11A3ECCDB7C76A24C2D82C6 /* TodayWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWidgetView.swift; sourceTree = "<group>"; };
 		E167DB3F2F4CBA025C2AC39D /* TaskFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFilter.swift; sourceTree = "<group>"; };
 		E19509BBAC41B61BE71E95D7 /* EditorRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorRequest.swift; sourceTree = "<group>"; };
 		E7BC44B8EF845C530AE2F728 /* PhotoViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewer.swift; sourceTree = "<group>"; };
@@ -157,6 +219,7 @@
 				E4F1C75728C6EAB39D4E2C54 /* Shared */,
 				5D8F56FAC1DA3B210674C72E /* Tik */,
 				556EE0A92AE85673CABBBA75 /* TikUITests */,
+				9BF5A9B2E5D353A4C756E9CF /* TikWidget */,
 				0E3304E9A53040E5FDF06A4C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -175,6 +238,7 @@
 			children = (
 				E95DB2CB6E010CE238BC1A39 /* Tik.app */,
 				1D54C92D25C63C21E91F0287 /* TikUITests.xctest */,
+				9676C0F65B1433A8FD9E1C8D /* TikWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +257,7 @@
 				7A88B4DF01F8671EAB2E987D /* TaskActions.swift */,
 				E167DB3F2F4CBA025C2AC39D /* TaskFilter.swift */,
 				5041F2BAB22A50CBD7535C26 /* TaskQueries.swift */,
+				0990667E0479BE0A9B1A0BB3 /* WidgetActions.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -243,6 +308,7 @@
 		42BA1302A5204727C695AD5E /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				07C9451CAE510736B00D6C71 /* ProgressBar.swift */,
 				4D2118FB27F6358DB8C73626 /* Typography.swift */,
 			);
 			path = Design;
@@ -287,6 +353,7 @@
 				F0DE59100414762F1FA5C355 /* SearchTests.swift */,
 				AF20207B008ED63FA60EE3DE /* SettingsTests.swift */,
 				28AFC07D898CDFBBE4DA89AF /* TodayFlowTests.swift */,
+				15ADC2E51BD476BDB006FC3D /* WidgetTests.swift */,
 			);
 			path = TikUITests;
 			sourceTree = "<group>";
@@ -356,6 +423,19 @@
 				223DB99D554B53D44BC7EEDD /* DateFormatting.swift */,
 			);
 			path = Formatting;
+			sourceTree = "<group>";
+		};
+		9BF5A9B2E5D353A4C756E9CF /* TikWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D872F0F35937452E6C91D012 /* Info.plist */,
+				0E0651EF3AFC96C05EC4D601 /* TikWidget.entitlements */,
+				538EE397499CCCEF8AD51388 /* TodayWidget.swift */,
+				E11A3ECCDB7C76A24C2D82C6 /* TodayWidgetView.swift */,
+				D10526FD7A21DC5B7C12DA09 /* ToggleTaskIntent.swift */,
+				0DFADE6B0155D77219D42627 /* WidgetData.swift */,
+			);
+			path = TikWidget;
 			sourceTree = "<group>";
 		};
 		A73B3927EEEA8FB44FC3B27C /* Editor */ = {
@@ -460,16 +540,36 @@
 			productReference = 1D54C92D25C63C21E91F0287 /* TikUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		6B4278AC19DEAD5632767D41 /* TikWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B844F689772735701B59C4A /* Build configuration list for PBXNativeTarget "TikWidget" */;
+			buildPhases = (
+				A1A26823050B0A978A185CF5 /* Sources */,
+				567E9B44AAC5C2C56706D37A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TikWidget;
+			packageProductDependencies = (
+			);
+			productName = TikWidget;
+			productReference = 9676C0F65B1433A8FD9E1C8D /* TikWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		AE28751BF7384B7E3AB94C42 /* Tik */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 418624A8C15DB19FB4A6C046 /* Build configuration list for PBXNativeTarget "Tik" */;
 			buildPhases = (
 				801F5FA550099ED19E01B983 /* Sources */,
 				299307D349CF8DDE072287B4 /* Resources */,
+				49107452EAEAA2E382E09CE0 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CC91CA2AC7C12FF7557EC44F /* PBXTargetDependency */,
 			);
 			name = Tik;
 			packageProductDependencies = (
@@ -491,6 +591,10 @@
 						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
 						TestTargetID = AE28751BF7384B7E3AB94C42;
+					};
+					6B4278AC19DEAD5632767D41 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
 					};
 					AE28751BF7384B7E3AB94C42 = {
 						DevelopmentTeam = "";
@@ -514,6 +618,7 @@
 			projectRoot = "";
 			targets = (
 				AE28751BF7384B7E3AB94C42 /* Tik */,
+				6B4278AC19DEAD5632767D41 /* TikWidget */,
 				28E84DEEE2D53AC56B95AA2C /* TikUITests */,
 			);
 		};
@@ -533,6 +638,19 @@
 				16A2B2776DFC924271234754 /* Vazirmatn-SemiBold.ttf in Resources */,
 				0F5D3DB1D2E68EAD7415CEBF /* celebrate.wav in Resources */,
 				EDDDD1F035D629EEF3973EDC /* tick.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		567E9B44AAC5C2C56706D37A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C132E263E3EB021C04EA8BE0 /* Localizable.xcstrings in Resources */,
+				64DFD946146BE99ED582A12F /* Vazirmatn-Bold.ttf in Resources */,
+				BA469A57C789797E23E6EF73 /* Vazirmatn-Medium.ttf in Resources */,
+				359E175ECCAB4DEF2E32EFA4 /* Vazirmatn-OFL.txt in Resources */,
+				2F8A765E66BDF6FA7E458A52 /* Vazirmatn-Regular.ttf in Resources */,
+				894F5EA65AD189ECEDA36268 /* Vazirmatn-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +684,7 @@
 				7467704DE61A7D4CDDC4D3FA /* PhotoViewer.swift in Sources */,
 				01580527AE36624447B083E8 /* Preferences.swift in Sources */,
 				036409842E0FE72CE25D1A9C /* Priority.swift in Sources */,
+				4F012E2CDA6322BB7E839EFF /* ProgressBar.swift in Sources */,
 				213633BBC2C332B5D7B10AE8 /* ProgressCard.swift in Sources */,
 				470DDA1D474497D22BCB0662 /* QuickAddBar.swift in Sources */,
 				5A2B08F0639D1AAF5A45E8D8 /* Reminders.swift in Sources */,
@@ -590,6 +709,35 @@
 				365F807A28A4358C3663E1A9 /* TodayHeader.swift in Sources */,
 				53BD76670F1305FB0C7D25BB /* TodayView.swift in Sources */,
 				BAC7613DD760B90B37EB7CC1 /* Typography.swift in Sources */,
+				B46A5B47A8A346BCBCC80CEE /* WidgetActions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1A26823050B0A978A185CF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22731F80DCC6621A1D9E8CCA /* DateFormatting.swift in Sources */,
+				26AE6F1A95FEDAF84414BB72 /* EnvironmentValues+Tik.swift in Sources */,
+				78A54E1895D2D991461BA5F9 /* L10n.swift in Sources */,
+				BA0E17E81B77A07121879DE2 /* Preferences.swift in Sources */,
+				DF06035A345C12E59B734EFB /* Priority.swift in Sources */,
+				BD46DFBCF5BEA171B0022900 /* ProgressBar.swift in Sources */,
+				9899C340E26D1B7F0DAAD52D /* Reminders.swift in Sources */,
+				2D1CA7C276CD68828D071B72 /* RepeatRule.swift in Sources */,
+				B9E0F4E326662E35790CCA32 /* SharedStore.swift in Sources */,
+				670CCF1B6873E3A2969B64CA /* Subtask.swift in Sources */,
+				F6BA3A3E12E5625838541D2B /* TaskActions.swift in Sources */,
+				82E5DE264F8D4869D24F1BD3 /* TaskFilter.swift in Sources */,
+				008011C32E8B1EFCBC7A9D5C /* TaskItem.swift in Sources */,
+				DC179AC7FE2EC726729D9FE6 /* TaskList.swift in Sources */,
+				82E36E6BF74E7865E39E2722 /* TaskQueries.swift in Sources */,
+				41C3DBF836C160821B7B21D9 /* TodayWidget.swift in Sources */,
+				2DBB458C693863E1C21340DA /* TodayWidgetView.swift in Sources */,
+				C7AA1D648F0C60BC1FCF3780 /* ToggleTaskIntent.swift in Sources */,
+				346FADBC540E7E4A1008221D /* Typography.swift in Sources */,
+				8539704333B7A9DF4E9D11D8 /* WidgetActions.swift in Sources */,
+				82CB06F6E88E18F595F96F19 /* WidgetData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +751,7 @@
 				C275317BEF3F46AF9E91D2C1 /* SearchTests.swift in Sources */,
 				DA6C74B6F8A2F1F0260D9E4B /* SettingsTests.swift in Sources */,
 				CA4538375686E2496645360F /* TodayFlowTests.swift in Sources */,
+				E538EDD83D77F9B1E95826B6 /* WidgetTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +762,11 @@
 			isa = PBXTargetDependency;
 			target = AE28751BF7384B7E3AB94C42 /* Tik */;
 			targetProxy = A0E44B5665D30F9A3511931D /* PBXContainerItemProxy */;
+		};
+		CC91CA2AC7C12FF7557EC44F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B4278AC19DEAD5632767D41 /* TikWidget */;
+			targetProxy = 0DCFAA9C9B570C2BAF8993AE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -771,6 +925,40 @@
 			};
 			name = Release;
 		};
+		60D977678F63248C5DC9C059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TikWidget/TikWidget.entitlements;
+				INFOPLIST_FILE = TikWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahyarmozafar.tik.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76577003BD0E5FBBE8D69618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TikWidget/TikWidget.entitlements;
+				INFOPLIST_FILE = TikWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahyarmozafar.tik.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		7BDDF320DA8E36569A4152E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -841,6 +1029,15 @@
 			buildConfigurations = (
 				B5579F7A9F44DC06A6154A85 /* Debug */,
 				B263A8A248E96E63F944AF8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3B844F689772735701B59C4A /* Build configuration list for PBXNativeTarget "TikWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60D977678F63248C5DC9C059 /* Debug */,
+				76577003BD0E5FBBE8D69618 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

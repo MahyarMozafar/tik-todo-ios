@@ -1,12 +1,60 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%lld left" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld کار مانده"
+          }
+        }
+      }
+    },
     "%lld of %lld done" : {
       "localizations" : {
         "fa" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld از %2$lld انجام شد"
+          }
+        }
+      }
+    },
+    "%lld tasks left today" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "امروز %lld کار مانده"
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld task left today"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld tasks left today"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "+%lld more" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+%lld کار دیگر"
           }
         }
       }
@@ -121,12 +169,32 @@
         }
       }
     },
+    "All done" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "همه انجام شد"
+          }
+        }
+      }
+    },
     "All done for today!" : {
       "localizations" : {
         "fa" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "همه‌ی کارهای امروز انجام شد!"
+          }
+        }
+      }
+    },
+    "All done today" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "امروز همه انجام شد"
           }
         }
       }
@@ -181,12 +249,34 @@
         }
       }
     },
+    "Buy groceries" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خرید خانه"
+          }
+        }
+      }
+    },
     "Calendar" : {
       "localizations" : {
         "fa" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "تقویم"
+          }
+        }
+      }
+    },
+    "Call mom" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تماس با مامان"
           }
         }
       }
@@ -791,6 +881,17 @@
         }
       }
     },
+    "Morning run" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دویدن صبحگاهی"
+          }
+        }
+      }
+    },
     "Move to Tomorrow" : {
       "localizations" : {
         "fa" : {
@@ -867,6 +968,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "نتیجه‌ای پیدا نشد"
+          }
+        }
+      }
+    },
+    "No tasks today" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "امروز کاری نداری"
           }
         }
       }
@@ -1093,6 +1204,17 @@
         }
       }
     },
+    "Reply to emails" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جواب دادن به ایمیل‌ها"
+          }
+        }
+      }
+    },
     "Scheduled" : {
       "localizations" : {
         "fa" : {
@@ -1119,6 +1241,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "کارهایت را جستجو کن"
+          }
+        }
+      }
+    },
+    "See today's tasks and tick them off." : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "کارهای امروز را ببین و تیکشان بزن."
           }
         }
       }
@@ -1263,6 +1395,16 @@
         }
       }
     },
+    "Task ID" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شناسه‌ی کار"
+          }
+        }
+      }
+    },
     "Tasks you finish will show up here." : {
       "localizations" : {
         "fa" : {
@@ -1299,6 +1441,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "پوسته"
+          }
+        }
+      }
+    },
+    "Tick Task" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تیک زدن کار"
           }
         }
       }

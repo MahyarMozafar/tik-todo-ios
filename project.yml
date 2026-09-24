@@ -27,6 +27,8 @@ targets:
     sources:
       - path: Tik
       - path: Shared
+    dependencies:
+      - target: TikWidget
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.mahyarmozafar.tik
@@ -39,6 +41,10 @@ targets:
         CFBundleDisplayName: Tik
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleURLTypes:
+          - CFBundleURLName: com.mahyarmozafar.tik
+            CFBundleURLSchemes:
+              - tik
         ITSAppUsesNonExemptEncryption: false
         UILaunchScreen: {}
         UIAppFonts:
@@ -63,6 +69,35 @@ targets:
     scheme:
       testTargets:
         - TikUITests
+
+  TikWidget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: TikWidget
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.mahyarmozafar.tik.widget
+        SKIP_INSTALL: YES
+    info:
+      path: TikWidget/Info.plist
+      properties:
+        CFBundleDisplayName: Tik
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+        UIAppFonts:
+          - Vazirmatn-Regular.ttf
+          - Vazirmatn-Medium.ttf
+          - Vazirmatn-SemiBold.ttf
+          - Vazirmatn-Bold.ttf
+    entitlements:
+      path: TikWidget/TikWidget.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.mahyarmozafar.tik
 
   TikUITests:
     type: bundle.ui-testing

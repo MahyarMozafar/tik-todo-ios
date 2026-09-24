@@ -55,6 +55,12 @@ enum Screenshot {
         let data = XCUIScreen.main.screenshot().pngRepresentation
         try? data.write(to: URL(fileURLWithPath: folder).appendingPathComponent("\(name).png"))
     }
+
+    /// Saves text next to the screenshots, handy for looking at an element tree.
+    static func saveText(_ text: String, as name: String) {
+        guard let folder = ProcessInfo.processInfo.environment["SCREENSHOTS_DIR"] else { return }
+        try? text.write(to: URL(fileURLWithPath: folder).appendingPathComponent("\(name).txt"), atomically: true, encoding: .utf8)
+    }
 }
 
 final class CelebrationTests: XCTestCase {

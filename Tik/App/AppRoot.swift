@@ -32,6 +32,9 @@ struct AppRoot: View {
                     model.reloadIfChangedElsewhere()
                 }
             }
+            .onOpenURL { url in
+                model.handle(url)
+            }
             .onChange(of: language) { _, newLanguage in
                 // Reminder buttons and texts follow the app's language.
                 Reminders.registerActions(language: newLanguage)

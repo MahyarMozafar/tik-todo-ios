@@ -122,6 +122,12 @@ struct SettingsView: View {
             Toggle(isOn: $colorfulBackground) {
                 SettingsLabel("Colorful Background", symbol: "paintpalette.fill", color: .pink)
             }
+
+            NavigationLink {
+                AppIconPicker()
+            } label: {
+                SettingsLabel("App Icon", symbol: "app.fill", color: .blue)
+            }
         }
     }
 

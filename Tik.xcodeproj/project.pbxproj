@@ -55,6 +55,7 @@
 		C4A43EFB6754E9732A0653FB /* AppRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3837775F5BE03483FDD3C55E /* AppRoot.swift */; };
 		CA4538375686E2496645360F /* TodayFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AFC07D898CDFBBE4DA89AF /* TodayFlowTests.swift */; };
 		CA826DC355801C78C272B11F /* EnvironmentValues+Tik.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D31A4DC564A7C627D5C93 /* EnvironmentValues+Tik.swift */; };
+		CC2F49CCC45A8FBDA5B21913 /* AppIconPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C4CB3211B3E79B6672BCA /* AppIconPicker.swift */; };
 		CCF2EEB4F35C40BF1580F969 /* Vazirmatn-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD6B098C22DB60CE832A3AD /* Vazirmatn-Medium.ttf */; };
 		DA6C74B6F8A2F1F0260D9E4B /* SettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF20207B008ED63FA60EE3DE /* SettingsTests.swift */; };
 		DFC99CBC3A79275898D6E9E5 /* TaskDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7E9BA1F392C7D70A9DBF2 /* TaskDraft.swift */; };
@@ -109,6 +110,7 @@
 		7A664BB503C617B14AA71B5C /* Vazirmatn-OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Vazirmatn-OFL.txt"; sourceTree = "<group>"; };
 		7A88B4DF01F8671EAB2E987D /* TaskActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskActions.swift; sourceTree = "<group>"; };
 		931B452F7633705F8646B76C /* TikApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikApp.swift; sourceTree = "<group>"; };
+		986C4CB3211B3E79B6672BCA /* AppIconPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconPicker.swift; sourceTree = "<group>"; };
 		99287CDB35B3893C287A6B9C /* CheckCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckCircle.swift; sourceTree = "<group>"; };
 		9B3BE30D3A57438C19E4DED3 /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
 		9C09D07A4F6B0DB6F655AF15 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 		45EC6CACC8369291A75F2F30 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				986C4CB3211B3E79B6672BCA /* AppIconPicker.swift */,
 				11D4B0492A0E200BEABC3D14 /* SettingsView.swift */,
 			);
 			path = Settings;
@@ -512,6 +515,7 @@
 			files = (
 				21E8301D9BBB90FE24F6ECCD /* AppBackground.swift in Sources */,
 				97FBACDEF164F24C61860F98 /* AppDelegate.swift in Sources */,
+				CC2F49CCC45A8FBDA5B21913 /* AppIconPicker.swift in Sources */,
 				E3E93DDC303F6D0776B0C93B /* AppModel.swift in Sources */,
 				C4A43EFB6754E9732A0653FB /* AppRoot.swift in Sources */,
 				1D7AB17AE269DA2ECD238EAE /* CardRow.swift in Sources */,
@@ -584,6 +588,7 @@
 		0DEB16B18B7D1905BF37C33E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-Midnight AppIcon-Light AppIcon-Mint AppIcon-Purple AppIcon-Sunset";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Tik/Tik.entitlements;
@@ -737,6 +742,7 @@
 		7BDDF320DA8E36569A4152E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-Midnight AppIcon-Light AppIcon-Mint AppIcon-Purple AppIcon-Sunset";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Tik/Tik.entitlements;

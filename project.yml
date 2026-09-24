@@ -31,6 +31,7 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.mahyarmozafar.tik
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES: AppIcon-Midnight AppIcon-Light AppIcon-Mint AppIcon-Purple AppIcon-Sunset
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
     info:
       path: Tik/Info.plist

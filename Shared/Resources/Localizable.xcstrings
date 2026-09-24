@@ -141,6 +141,16 @@
         }
       }
     },
+    "App Icon" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آیکون برنامه"
+          }
+        }
+      }
+    },
     "Appearance" : {
       "localizations" : {
         "fa" : {
@@ -741,6 +751,16 @@
         }
       }
     },
+    "Midnight" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نیمه‌شب"
+          }
+        }
+      }
+    },
     "Mint" : {
       "localizations" : {
         "fa" : {
@@ -1189,6 +1209,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "زیرکارها"
+          }
+        }
+      }
+    },
+    "Sunset" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "غروب"
           }
         }
       }
